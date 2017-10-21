@@ -20,6 +20,8 @@ import GenericBackComponent from '../../GenericBackComponent';
 import ThemeView from '../../../components/ThemeView';
 import Video from 'react-native-video';
 import Orientation from 'react-native-orientation';
+import ProgressIndicator from '../../../components/progressIndicator';
+import PlayerButton from '../../../components/PlayerButton'
 
 
 //Text
@@ -37,6 +39,7 @@ class VideoSession extends GenericBackComponent {
          playing: true,
          muted: false,
          ended: false,
+         progress: 0,
      }
  }
 
@@ -85,11 +88,21 @@ class VideoSession extends GenericBackComponent {
          resizeMode="cover"
          repeat={false}
          onEnd={this._onEnd.bind(this)}
+         progressUpdateInterval={250.0}
+         onProgress={this._onProgress.bind(this)}
      />
     </View>
+       <View style={[styles.progressWrapper]}>
+           <ProgressIndicator progress={this.state.progress}></ProgressIndicator>
+           <PlayerButton onPause={this._pauseVideo.bind(this)} onPlay={this._playVideo.bind(this)} playing={this.state.playing} style={styles.playerButton}></PlayerButton>
+       </View>
    </View>
   );
  }
+
+    _onProgress(data){
+        this.setState({progress: data.currentTime / data.playableDuration});
+    }
 
 
     _orientationDidChange = (orientation) => {
@@ -100,9 +113,12 @@ class VideoSession extends GenericBackComponent {
         }
     }
 
-    _btnPlayPressed(){
-        if(this.state.ended) this.player.seek(0);
-        this.setState({playing: !this.state.playing, ended:false});
+    _playVideo(){
+        this.setState({playing: true});
+    }
+
+    _pauseVideo(){
+        this.setState({playing: false});
     }
 
     _onEnd(){
@@ -133,6 +149,14 @@ const styles = StyleSheet.create({
         fontSize: 21,
         fontWeight: '200',
         color: '#ffffff'
+    },
+    playerButton: {
+        position: 'absolute'
+    },
+    progressWrapper: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 
 });
