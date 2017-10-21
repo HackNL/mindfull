@@ -49,7 +49,6 @@ class WeekView extends Component {
     </View>
 
     <View style={[styles.sessionWrapper]}>
-
      {this._renderSessions()}
     </View>
    </View>
@@ -69,6 +68,7 @@ const styles = StyleSheet.create({
   color: '#ffffff'
  },
  titleWrapper: {
+  paddingBottom: 40,
   justifyContent: 'center',
 
   flexDirection: 'row'
@@ -81,7 +81,8 @@ const styles = StyleSheet.create({
   color: '#ffffff'
  },
  sessionWrapper: {
-  flexDirection: 'row',
+  flexDirection: 'column',
+  marginBottom: 100,
  },
  transparantBackground: {
   backgroundColor: color.transparant

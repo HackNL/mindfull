@@ -14,7 +14,7 @@ import {
 
 //constants
 import color from '../../style/Colors';
-import {appVars} from '../../constants';
+import {appVars, NavigationStyle} from '../../constants';
 
 //Text
 import generalText from '../../../resources/data/generalText';
@@ -50,30 +50,47 @@ class SessionView extends Component {
  }
 
  _renderCircle() {
-  console.log('----------');
-  console.log('this.props.session.kind', this.props.session.kind);
-  console.log('----------');
+  var state = 'todo';
+  //TODO; save progress in DB
+  if (this.props.session.kind === 'video') {
+   state = 'active'
+  }
   return (
-   <Image source={sesionTypeImages[this.props.session.kind]['todo']}></Image>
+   <Image source={sesionTypeImages[this.props.session.kind][state]}></Image>
   )
  }
- _navigateTo() {
-  this.props.navigator.push({
-   screen: 'Mindfull.VideoSession', // unique ID registered with Navigation.registerScreen
-   title: '',
+ _renderLine() {
+  if (this.props.session.kind !== 'extra') {
+   return (
+    <View style={[styles.line]}>
+     <Image source={require('../../../resources/images/line.png')}></Image>
+    </View>
+   )
+  } else {
+   return (
+    <View></View>
+   )
+  }
 
+ }
+
+ _navigateTo() {
+  console.log('`Mindfull.${this.props.session.kind}.session`', `Mindfull.${this.props.session.kind}.session`);
+  this.props.navigator.push({
+   screen: `Mindfull.${this.props.session.kind}.session`, // unique ID registered with Navigation.registerScreen
+   title: '',
+   navigatorStyle: NavigationStyle
   });
  }
 
  render() {
-  console.log('hihiuisiu');
   return (
    <TouchableWithoutFeedback style={[styles.dayWrapper]} onPress={this._navigateTo.bind(this)}>
-   <View style={[styles.dayWrapper]}>
+    <View style={[styles.dayWrapper]}>
      <Text>{this.props.session.tite}</Text>
      {this._renderCircle()}
-     <View style={[styles.line]}></View>
-   </View>
+     {this._renderLine()}
+    </View>
    </TouchableWithoutFeedback>
   )
  }
@@ -81,13 +98,16 @@ class SessionView extends Component {
 
 const styles = StyleSheet.create({
  dayWrapper: {
-  marginTop: 90
+  justifyContent: 'center',
+  alignItems: 'center',
  },
-
  line: {
-  borderStyle: 'solid',
-  borderWidth: 2,
-  borderColor: '#ffffff'
+  // borderStyle: 'dotted',
+  //
+  // borderWidth: 2,
+  // width: 2,
+  // height: 100,
+  // borderColor: '#ffffff'
  }
 });
 
