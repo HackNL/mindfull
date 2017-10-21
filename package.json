@@ -1,0 +1,27 @@
+{
+ "name": "mindfull",
+ "version": "0.0.1",
+ "private": true,
+ "scripts": {
+  "start": "watchman watch-del-all && (adb reverse tcp:8081 tcp:8081 || true) && node node_modules/react-native/local-cli/cli.js start --reset-cache",
+  "xcode": "open ios/mindfull.xcodeproj",
+  "android": "cd android && ./gradlew installDebug",
+  "bundle-android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --sourcemap-output android/app/src/main/assets/index.android.map --assets-dest android/app/src/main/res/",
+  "rebuild-dep": "rm -rf node_modules && npm install && react-native link",
+  "test": "jest"
+ },
+ "dependencies": {
+  "react": "16.0.0-alpha.12",
+  "react-native": "0.46.0",
+  "react-native-linear-gradient": "^2.3.0",
+  "react-native-navigation": "^1.1.22",
+  "realm": "1.10.0"
+ },
+ "devDependencies": {
+  "babel-preset-react-native": "1.9.2",
+  "react-test-renderer": "16.0.0-alpha.12"
+ },
+ "jest": {
+  "preset": "react-native"
+ }
+}
