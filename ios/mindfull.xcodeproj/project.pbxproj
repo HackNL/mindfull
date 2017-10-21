@@ -41,9 +41,9 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* mindfullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mindfullTests.m */; };
 		3917A4F51F6AC323001F1283 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A4D11F6AC30C001F1283 /* libBVLinearGradient.a */; };
-		39B5ABFB1F9B8A7200033ED5 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5ABFA1F9B8A5700033ED5 /* libRNSound.a */; };
 		39B5AC391F9B922200033ED5 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39B5AC381F9B922200033ED5 /* test.mp3 */; };
 		39B5AC981F9B9F4800033ED5 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5AC951F9B9F0E00033ED5 /* libART.a */; };
+		39B5ACD11F9BC4E000033ED5 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5ABFA1F9B8A5700033ED5 /* libRNSound.a */; };
 		50702EF7C081458CAAAC252D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */; };
 		58F169592ACB4AA9848CEBEA /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1302FAA058654374A3AEAFDA /* OpenSans-Italic.ttf */; };
 		5E315EFB3E6F48668344A3DB /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */; };
@@ -424,6 +424,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B5ACD11F9BC4E000033ED5 /* libRNSound.a in Frameworks */,
 				DAC3E9231F9BAA3800C73345 /* libRCTOrientation.a in Frameworks */,
 				DAC3E91C1F9BA15E00C73345 /* libRCTVideo.a in Frameworks */,
 				3917A4F51F6AC323001F1283 /* libBVLinearGradient.a in Frameworks */,
