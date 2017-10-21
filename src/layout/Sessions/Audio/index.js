@@ -33,12 +33,15 @@ class AudioSession extends GenericBackComponent {
   Sound.setCategory('Playback');
 
   this.music;
-  this.interval = setInterval(() => {}, 5);
+  this.interval = setInterval(() => {}, 1000);
+  this.helperInterval = setInterval(() => {}, 1000);
+  this.helpText = this.props.session.content[0].helpText;
 
   this.state = {
    playing: true,
    progress: 0.1,
-   duration: 0
+   duration: 0,
+   helpText: this.helpText[0]
   };
  }
 
@@ -51,6 +54,20 @@ class AudioSession extends GenericBackComponent {
    this.setState({duration: this.music.getDuration()});
    // console.log('duration in seconds: ' + test.getDuration() + ' number of channels: ' + test.getNumberOfChannels());
   });
+  this._setHelpText();
+ }
+ _randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+ }
+
+ _setHelpText() {
+
+  this.helperInterval = setInterval(() => {
+
+   this.setState({
+    helpText: this.helpText[this._randomNumber(0, this.props.session.content[0].helpText.length)]
+   });
+  }, 10000);
  }
 
  _getCurrentTime() {
@@ -59,7 +76,7 @@ class AudioSession extends GenericBackComponent {
   this.interval = setInterval(() => {
    this.music.getCurrentTime((seconds) => {
 
-    progress = 1/this.state.duration*seconds;
+    progress = 1 / this.state.duration * seconds;
 
     _this.setState({progress: progress});
 
@@ -98,6 +115,7 @@ class AudioSession extends GenericBackComponent {
       <ProgressIndicator progress={this.state.progress}></ProgressIndicator>
       <PlayerButton onPause={this._pauseMusic.bind(this)} onPlay={this._playMusic.bind(this)} playing={this.state.playing} style={styles.playerButton}></PlayerButton>
      </View>
+     <Text>{this.state.helpText}</Text>
     </View>
    </View>
   );

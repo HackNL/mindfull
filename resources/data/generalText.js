@@ -29,6 +29,7 @@ var generalText = {
       kind: 'audio',
       content: [{
         soundUrl: 'test.mp3',
+        helpText: ['Take a deep breath','Sit down and releax', 'Text'],
         resources: [{
             url: 'https://youtube.com/',
             title: 'youtube'
