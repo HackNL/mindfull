@@ -12,20 +12,17 @@ import {
 } from 'react-native';
 
 //constants
-import color from '../../style/Colors';
-import {appVars} from '../../constants';
+import color from '../../../style/Colors';
+import {appVars} from '../../../constants';
 
 //components
-import GradientBackground from '../../components/GradientBackground';
-import ThemeView from '../../components/ThemeView';
-
-//Views
-import GeneralBaseView from '../../layout/GeneralBaseView';
+import GenericBackComponent from '../../GenericBackComponent';
+import ThemeView from '../../../components/ThemeView';
 
 //Text
-import generalText from '../../../resources/data/generalText';
+import generalText from '../../../../resources/data/generalText';
 
-class Main extends GeneralBaseView {
+class VideoSession extends GenericBackComponent {
 
  constructor(props) {
   super(props);
@@ -33,11 +30,10 @@ class Main extends GeneralBaseView {
 
  componentDidMount() {}
 
-
  _renderChild() {
   return (
    <View style={[styles.transparantBackground]}>
-    <Text>Audio</Text>
+    <Text>Video</Text>
    </View>
   );
  }
@@ -51,4 +47,4 @@ const styles = StyleSheet.create({
  }
 });
 
-export default Main;
+export default VideoSession;

@@ -56,14 +56,27 @@ class SessionView extends Component {
    state = 'active'
   }
   return (
-   <Image source={sesionTypeImages[this.props.session.kind][state]}></Image>
+   <View style={[styles.titleWrapper]}>
+    <View style={{
+     width: 140,  justifyContent: 'center', alignItems: 'center' }}>
+     <Image source={sesionTypeImages[this.props.session.kind][state]}></Image>
+    </View>
+    <Text style={[(state === 'active')
+      ? styles.textBig
+      : styles.text]}>{this.props.session.title}</Text>
+   </View>
   )
  }
+
  _renderLine() {
   if (this.props.session.kind !== 'extra') {
    return (
-    <View style={[styles.line]}>
-     <Image source={require('../../../resources/images/line.png')}></Image>
+    <View style={{
+     width: 220,
+     justifyContent: 'center',
+     alignItems: 'center'
+    }}>
+     <Image resizeMode={'center'} source={require('../../../resources/images/line.png')}></Image>
     </View>
    )
   } else {
@@ -75,20 +88,24 @@ class SessionView extends Component {
  }
 
  _navigateTo() {
-  console.log('`Mindfull.${this.props.session.kind}.session`', `Mindfull.${this.props.session.kind}.session`);
   this.props.navigator.push({
-   screen: `Mindfull.${this.props.session.kind}.session`, // unique ID registered with Navigation.registerScreen
+   screen: `Mindfull.session.${this.props.session.kind}`, // unique ID registered with Navigation.registerScreen
    title: '',
-   navigatorStyle: NavigationStyle
+   navigatorStyle: NavigationStyle,
+   passProps: {
+    session: this.props.session,
+    title: this.props.session.title
+   }
   });
  }
 
  render() {
+
   return (
    <TouchableWithoutFeedback style={[styles.dayWrapper]} onPress={this._navigateTo.bind(this)}>
     <View style={[styles.dayWrapper]}>
-     <Text>{this.props.session.tite}</Text>
      {this._renderCircle()}
+
      {this._renderLine()}
     </View>
    </TouchableWithoutFeedback>
@@ -99,15 +116,28 @@ class SessionView extends Component {
 const styles = StyleSheet.create({
  dayWrapper: {
   justifyContent: 'center',
-  alignItems: 'center',
+  // alignItems: 'center'
  },
- line: {
-  // borderStyle: 'dotted',
-  //
-  // borderWidth: 2,
-  // width: 2,
-  // height: 100,
-  // borderColor: '#ffffff'
+ titleWrapper: {
+  width: appVars.width,
+  marginLeft: 40,
+  justifyContent: 'flex-start',
+  flexDirection: 'row',
+  alignItems: 'center'
+ },
+ text: {
+  fontFamily: 'OpenSans',
+  fontSize: 21,
+  marginLeft: 20,
+  fontWeight: '300',
+  color: '#ffffff'
+ },
+ textBig: {
+  fontFamily: 'OpenSans',
+  fontSize: 25,
+  marginLeft: 20,
+  fontWeight: '300',
+  color: '#ffffff'
  }
 });
 
