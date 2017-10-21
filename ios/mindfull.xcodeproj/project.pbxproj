@@ -41,6 +41,9 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* mindfullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mindfullTests.m */; };
 		3917A4F51F6AC323001F1283 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A4D11F6AC30C001F1283 /* libBVLinearGradient.a */; };
+		39B5ABFB1F9B8A7200033ED5 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5ABFA1F9B8A5700033ED5 /* libRNSound.a */; };
+		39B5AC391F9B922200033ED5 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39B5AC381F9B922200033ED5 /* test.mp3 */; };
+		39B5AC981F9B9F4800033ED5 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5AC951F9B9F0E00033ED5 /* libART.a */; };
 		50702EF7C081458CAAAC252D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */; };
 		58F169592ACB4AA9848CEBEA /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1302FAA058654374A3AEAFDA /* OpenSans-Italic.ttf */; };
 		5E315EFB3E6F48668344A3DB /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */; };
@@ -171,6 +174,27 @@
 			proxyType = 2;
 			remoteGlobalIDString = 64AA15081EF7F30100718508;
 			remoteInfo = "BVLinearGradient-tvOS";
+		};
+		39B5ABF91F9B8A5700033ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B5ABF51F9B8A5700033ED5 /* RNSound.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 19825A1E1BD4A89800EE0337;
+			remoteInfo = RNSound;
+		};
+		39B5AC941F9B9F0E00033ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B5AC8F1F9B9F0E00033ED5 /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = ART;
+		};
+		39B5AC961F9B9F0E00033ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B5AC8F1F9B9F0E00033ED5 /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323A12871E5F266B004975B8;
+			remoteInfo = "ART-tvOS";
 		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -333,6 +357,9 @@
 		2D02E47B1E0B4A5D006451C7 /* mindfull-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mindfull-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* mindfull-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mindfull-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3917A4CB1F6AC30C001F1283 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
+		39B5ABF51F9B8A5700033ED5 /* RNSound.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
+		39B5AC381F9B922200033ED5 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = test.mp3; path = ../resources/resources/sounds/test.mp3; sourceTree = "<group>"; };
+		39B5AC8F1F9B9F0E00033ED5 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		3C8D93C855234B209C0DA776 /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Medium.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
 		3F5D975305D84389855D68FB /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-SemiboldItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		407B102DF8E04998ADB08F5F /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -372,6 +399,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B5ABFB1F9B8A7200033ED5 /* libRNSound.a in Frameworks */,
 				3917A4F51F6AC323001F1283 /* libBVLinearGradient.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				175CCC101F0D1B0200DFCEE3 /* libReactNativeNavigation.a in Frameworks */,
@@ -381,6 +409,7 @@
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
+				39B5AC981F9B9F4800033ED5 /* libART.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
@@ -495,6 +524,7 @@
 		13B07FAE1A68108700A75B9A /* mindfull */ = {
 			isa = PBXGroup;
 			children = (
+				39B5AC371F9B91C000033ED5 /* sounds */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -560,6 +590,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		39B5ABF61F9B8A5700033ED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39B5ABFA1F9B8A5700033ED5 /* libRNSound.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39B5AC371F9B91C000033ED5 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				39B5AC381F9B922200033ED5 /* test.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		39B5AC901F9B9F0E00033ED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39B5AC951F9B9F0E00033ED5 /* libART.a */,
+				39B5AC971F9B9F0E00033ED5 /* libART-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,6 +676,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				39B5AC8F1F9B9F0E00033ED5 /* ART.xcodeproj */,
+				39B5ABF51F9B8A5700033ED5 /* RNSound.xcodeproj */,
 				3917A4CB1F6AC30C001F1283 /* BVLinearGradient.xcodeproj */,
 				17D426181F59B2D800E4243E /* RealmReact.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
@@ -763,7 +820,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = T8TD8Y6VZ2;
+						DevelopmentTeam = TK9M7QD44E;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -788,6 +845,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 39B5AC901F9B9F0E00033ED5 /* Products */;
+					ProjectRef = 39B5AC8F1F9B9F0E00033ED5 /* ART.xcodeproj */;
+				},
 				{
 					ProductGroup = 3917A4CC1F6AC30C001F1283 /* Products */;
 					ProjectRef = 3917A4CB1F6AC30C001F1283 /* BVLinearGradient.xcodeproj */;
@@ -843,6 +904,10 @@
 				{
 					ProductGroup = 17D426191F59B2D800E4243E /* Products */;
 					ProjectRef = 17D426181F59B2D800E4243E /* RealmReact.xcodeproj */;
+				},
+				{
+					ProductGroup = 39B5ABF61F9B8A5700033ED5 /* Products */;
+					ProjectRef = 39B5ABF51F9B8A5700033ED5 /* RNSound.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -959,6 +1024,27 @@
 			fileType = archive.ar;
 			path = libBVLinearGradient.a;
 			remoteRef = 3917A4D21F6AC30C001F1283 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39B5ABFA1F9B8A5700033ED5 /* libRNSound.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSound.a;
+			remoteRef = 39B5ABF91F9B8A5700033ED5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39B5AC951F9B9F0E00033ED5 /* libART.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libART.a;
+			remoteRef = 39B5AC941F9B9F0E00033ED5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39B5AC971F9B9F0E00033ED5 /* libART-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libART-tvOS.a";
+			remoteRef = 39B5AC961F9B9F0E00033ED5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -1101,6 +1187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B5AC391F9B922200033ED5 /* test.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				14D879C4EC1B4BA9898400A9 /* OpenSans-Bold.ttf in Resources */,
@@ -1240,6 +1327,7 @@
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-controllers/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = mindfullTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1270,6 +1358,7 @@
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-controllers/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = mindfullTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1296,12 +1385,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = T8TD8Y6VZ2;
+				DEVELOPMENT_TEAM = TK9M7QD44E;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/realm/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = mindfull/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1310,7 +1400,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.mindfull;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.mindfulll;
 				PRODUCT_NAME = mindfull;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1321,12 +1411,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8TD8Y6VZ2;
+				DEVELOPMENT_TEAM = TK9M7QD44E;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**/**",
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/realm/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = mindfull/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1335,7 +1426,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.mindfull;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.mindfulll;
 				PRODUCT_NAME = mindfull;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1357,6 +1448,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-controllers/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = "mindfull-tvOS/Info.plist";
@@ -1396,6 +1488,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-controllers/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = "mindfull-tvOS/Info.plist";

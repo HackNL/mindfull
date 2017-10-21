@@ -28,7 +28,7 @@ var generalText = {
       title: 'Into time',
       kind: 'audio',
       content: [{
-        // soundUrl: require(''),
+        soundUrl: 'test.mp3',
         resources: [{
             url: 'https://youtube.com/',
             title: 'youtube'

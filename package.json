@@ -16,6 +16,10 @@
   "react-native": "0.46.0",
   "react-native-linear-gradient": "^2.3.0",
   "react-native-navigation": "^1.1.22",
+  "react-native-progress": "^3.4.0",
+  "react-native-progress-circle": "^2.0.0",
+  "react-native-sound": "^0.10.4",
+  "react-native-svg": "^5.4.2",
   "react-timer-mixin": "^0.13.3",
   "realm": "1.10.0"
  },
@@ -26,9 +30,10 @@
  "jest": {
   "preset": "react-native"
  },
-   "rnpm": {
-    "assets": [
-      "./resources/fonts"
-    ]
-  }
+ "rnpm": {
+  "assets": [
+   "./resources/fonts",
+   "./resources/resources/sounds"
+  ]
+ }
 }
