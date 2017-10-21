@@ -29,16 +29,24 @@ var generalText = {
       kind: 'audio',
       content: [{
         soundUrl: 'test.mp3',
-        helpText: ['Take a deep breath','Sit down and releax', 'Text'],
-        resources: [{
-            url: 'https://youtube.com/',
-            title: 'youtube'
-          },
-          {
-            url: 'https://youtube.com/',
-            title: 'youtube2'
-          }
-        ]
+        helpText: ['Take a deep breath', 'Sit down and releax', 'Text'],
+        resources: {
+          title: 'You did it!',
+          body: '“What can you skip today to enjoy more time?”',
+          data: [{
+              url: 'https://bijbel.eo.nl/prediker',
+              title: 'Read prediker online'
+            },
+            {
+              url: 'https://youtube.com',
+              title: 'Follow up music'
+            },
+            {
+              url: 'https://youtube.com',
+              title: 'Read full text'
+            }
+          ]
+        }
       }]
     }, {
       title: 'Stil',
