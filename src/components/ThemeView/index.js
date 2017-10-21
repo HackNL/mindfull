@@ -32,11 +32,12 @@ class WeekView extends Component {
  componentDidMount() {}
 
  _renderSessions(){
+  console.log('this.props.theme.sessions', this.props.theme.sessions);
   this.props.theme.sessions.map(function (session, index) {
    return (
     <SessionView session={session} state={1} key={index}></SessionView>
-   )
-  })
+   );
+  });
  }
 
 
@@ -48,7 +49,10 @@ class WeekView extends Component {
      <Text style={[styles.header]}>{this.props.theme.title}</Text>
     </View>
 
-    <View style={[styles.dayWrapper]}></View>
+    <View style={[styles.sessionWrapper]}>
+
+     {this._renderSessions()}
+    </View>
    </View>
   )
  }
@@ -77,7 +81,9 @@ const styles = StyleSheet.create({
   fontWeight: 'bold',
   color: '#ffffff'
  },
- dayWrapper: {},
+ sessionWrapper: {
+  flexDirection: 'row',
+ },
  transparantBackground: {
   backgroundColor: color.transparant
  }

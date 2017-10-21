@@ -39,6 +39,36 @@ var generalText = {
           }
         ]
       }]
+    },{
+      title: 'Stil',
+      kind: 'stil',
+      content: [{
+        // soundUrl: require(''),
+        resources: [{
+            url: 'https://youtube.com/',
+            title: 'youtube'
+          },
+          {
+            url: 'https://youtube.com/',
+            title: 'youtube2'
+          }
+        ]
+      }]
+    },{
+      title: '',
+      kind: 'extra',
+      content: [{
+        // soundUrl: require(''),
+        resources: [{
+            url: 'https://youtube.com/',
+            title: 'youtube'
+          },
+          {
+            url: 'https://youtube.com/',
+            title: 'youtube2'
+          }
+        ]
+      }]
     }]
   }]
 };
