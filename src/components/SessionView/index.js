@@ -8,6 +8,7 @@ import {
  TouchableWithoutFeedback,
  ScrollView,
  Text,
+ Image,
  Dimensions
 } from 'react-native';
 
@@ -26,18 +27,18 @@ const sesionTypeImages = {
  },
  audio: {
   active: require('../../../resources/images/icon-audio-start.png'),
-  done: require('../../../resources/images/icon-play-success.png'), //TODO
+  done: require('../../../resources/images/icon-audio-success.png'), //TODO
   todo: require('../../../resources/images/icon-audio.png')
  },
  stil: {
   active: require('../../../resources/images/icon-silence-start.png'),
-  done: require('../../../resources/images/icon-play-success.png'), //TODO
+  done: require('../../../resources/images/icon-silence-success.png'), //TODO
   todo: require('../../../resources/images/icon-silence.png')
  },
  extra: {
-  // active: require('../../../resources/images/btn_start.png'),
-  // done: require('../../../resources/images/btn_start.png'),
-  // todo: require('../../../resources/images/btn_start.png')
+  active: require('../../../resources/images/icon-extra.png'),
+  done: require('../../../resources/images/icon-extra-locked.png'), //TODO
+  todo: require('../../../resources/images/icon-extra.png')
  }
 }
 
@@ -49,18 +50,31 @@ class SessionView extends Component {
  }
 
  _renderCircle() {
+  console.log('----------');
+  console.log('this.props.session.kind', this.props.session.kind);
+  console.log('----------');
   return (
-   <Image source={backgroundImages[this.props.session.kind]['todo']}></Image>
+   <Image source={sesionTypeImages[this.props.session.kind]['todo']}></Image>
   )
+ }
+ _navigateTo() {
+  this.props.navigator.push({
+   screen: 'Mindfull.VideoSession', // unique ID registered with Navigation.registerScreen
+   title: '',
+
+  });
  }
 
  render() {
+  console.log('hihiuisiu');
   return (
+   <TouchableWithoutFeedback style={[styles.dayWrapper]} onPress={this._navigateTo.bind(this)}>
    <View style={[styles.dayWrapper]}>
-    <Text>{this.props.session.tite}</Text>
-    {this._renderCircle()}
-    <View style={[styles.line]}></View>
+     <Text>{this.props.session.tite}</Text>
+     {this._renderCircle()}
+     <View style={[styles.line]}></View>
    </View>
+   </TouchableWithoutFeedback>
   )
  }
 }

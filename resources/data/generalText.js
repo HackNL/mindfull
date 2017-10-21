@@ -24,9 +24,9 @@ var generalText = {
           }
         ]
       }]
-    },{
+    }, {
       title: 'Into time',
-      kind: 'sound',
+      kind: 'audio',
       content: [{
         // soundUrl: require(''),
         resources: [{
@@ -39,7 +39,7 @@ var generalText = {
           }
         ]
       }]
-    },{
+    }, {
       title: 'Stil',
       kind: 'stil',
       content: [{
@@ -54,7 +54,7 @@ var generalText = {
           }
         ]
       }]
-    },{
+    }, {
       title: '',
       kind: 'extra',
       content: [{

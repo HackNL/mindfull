@@ -33,23 +33,11 @@ class Main extends GeneralBaseView {
 
  componentDidMount() {}
 
- _renderThemes() {
-  var themes = generalText.themes.map((theme, index) => {
-   return (
-    <ThemeView theme={theme} key={index} navigator={this.props.navigator}></ThemeView>
-   )
-  });
-  return (
-   <View>
-    {themes}
-   </View>
-  )
- }
 
  _renderChild() {
   return (
-   <View style={[styles.transparantBackground]} >
-    {this._renderThemes()}
+   <View style={[styles.transparantBackground]}>
+    <Text>Video</Text>
    </View>
   );
  }

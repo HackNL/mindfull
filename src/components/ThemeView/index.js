@@ -32,10 +32,9 @@ class WeekView extends Component {
  componentDidMount() {}
 
  _renderSessions(){
-  console.log('this.props.theme.sessions', this.props.theme.sessions);
-  this.props.theme.sessions.map(function (session, index) {
+  return this.props.theme.sessions.map((session, index) => {
    return (
-    <SessionView session={session} state={1} key={index}></SessionView>
+    <SessionView session={session} state={1} key={index} navigator={this.props.navigator}></SessionView>
    );
   });
  }
