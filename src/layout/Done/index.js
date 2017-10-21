@@ -6,6 +6,7 @@ import {
  View,
  TouchableWithoutFeedback,
  ScrollView,
+ Linking,
  Text,
  Dimensions
 } from 'react-native';
@@ -35,22 +36,29 @@ class Done extends GenericBackComponent {
  componentDidMount() {}
 
  _renderButtons() {
-  return this.props.content.resources.data.map(function(resource, index) {
+  return this.props.content.resources.data.map((resource, index) => {
    return (
-    <Button title={resource.title} filled={false}></Button>
+    <Button title={resource.title} filled={false} onPress={this._openURL.bind(this, resource.url)}></Button>
    );
   });
-  // return(
-  //
-  // );
  }
+
+ _openURL(url){
+  Linking.openURL(url).catch(err => console.error('An error occurred', err));
+ }
+
  _renderBottom(){
   return (
    <View style={styles.buttonWrapper}>
     {this._renderButtons()}
-    <Button title={'Finish Session'} filled={true}></Button>
+    <Button title={'Finish Session'} filled={true} onPress={() => this._goToHome()}></Button>
    </View>
   )
+ }
+ _goToHome(){
+  this.props.navigator.popToRoot({
+    animated: false
+  })
  }
 
  _renderChild() {
