@@ -12,7 +12,8 @@ import {
 
 //global vars
 import color from '../style/Colors';
-import AppStyle from '../style/Styles';
+import appStyle from '../style/Styles';
+import {appVars} from '../constants';
 
 //components
 import GradientBackground from '../components/GradientBackground';
@@ -32,13 +33,13 @@ export default class GeneralBaseView extends Component {
 
  render() {
   return (
-   <View style={styles.GradientBackground}>
-    <GradientBackground style={styles.GradientBackground} colorTop={color.primary} colorBottom={color.secodary}>
-     <ScrollView>
-      {this._renderChild()}
-     </ScrollView>
-    </GradientBackground>
-   </View>
+   <GradientBackground style={styles.GradientBackground} colorTop={color.primary} colorBottom={color.secondary}>
+    <Image source={require('../../resources/images/bg_stars.png')} style={styles.stars}></Image>
+    <ScrollView styles={[appStyle.flexContainer]}>
+     {this._renderChild()}
+    </ScrollView>
+   </GradientBackground>
+
   );
  }
 
@@ -46,9 +47,14 @@ export default class GeneralBaseView extends Component {
 
 const styles = StyleSheet.create({
  GradientBackground: {
-  flex: 1,
-
-  position: 'relative',
-  flexDirection: 'column'
+  flexDirection: 'row',
+  flex: 1
+ },
+ stars: {
+  position: 'absolute',
+  left: 0,
+  top: 0,
+  right: 0,
+  width: appVars.width
  }
 });

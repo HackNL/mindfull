@@ -17,6 +17,7 @@ import {appVars} from '../../constants';
 
 //components
 import GradientBackground from '../../components/GradientBackground';
+import WeekView from '../../components/weekView';
 
 //Views
 import GeneralBaseView from '../../layout/GeneralBaseView';
@@ -32,16 +33,39 @@ class Main extends GeneralBaseView {
 
  componentDidMount() {}
 
- _renderChild(){
+ _renderWeeks() {
+  var themes = generalText.themes.map(function(theme) {
+   return (
+    <WeekView theme={theme}></WeekView>
+   )
+  });
   return (
-   <Text>hoihioi</Text>
+   <View>
+    {themes}
+   </View>
+  )
+ }
+
+ _renderChild() {
+  return (
+   <View style={[
+    {
+     flex: 1
+    },
+    styles.transparantBackground
+   ]}>
+    {this._renderWeeks()}
+
+   </View>
   );
  }
 
 }
 
 const styles = StyleSheet.create({
- 
+ transparantBackground: {
+  backgroundColor: color.transparant
+ }
 });
 
 export default Main;

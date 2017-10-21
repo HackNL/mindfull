@@ -10,16 +10,14 @@ import color from './style/Colors'
 registerScreens();
 
 export default class App {
- constructor() {
-
- }
+ constructor() {}
 }
 
 Navigation.startSingleScreenApp({
  screen: {
   //  orientation: 'portrait',
   screen: 'Mindfull.Main',
-  title: generalText.main.title,
+  title: '',
   navigatorStyle: {
    drawUnderNavBar: true,
    navBarTranslucent: true,
@@ -32,10 +30,9 @@ Navigation.startSingleScreenApp({
    navBarNoBorder: true,
    statusBarTextColorScheme: 'light',
    screenBackgroundColor: color.secodary
- },
-
+  }
  },
  appStyle: {
-    orientation: 'portrait',
-  }
+  orientation: 'portrait'
+ }
 });
