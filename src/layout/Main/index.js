@@ -17,7 +17,7 @@ import {appVars} from '../../constants';
 
 //components
 import GradientBackground from '../../components/GradientBackground';
-import WeekView from '../../components/weekView';
+import ThemeView from '../../components/ThemeView';
 
 //Views
 import GeneralBaseView from '../../layout/GeneralBaseView';
@@ -36,7 +36,7 @@ class Main extends GeneralBaseView {
  _renderWeeks() {
   var themes = generalText.themes.map(function(theme) {
    return (
-    <WeekView theme={theme}></WeekView>
+    <ThemeView theme={theme}></ThemeView>
    )
   });
   return (

@@ -11,6 +11,10 @@ import {
  Dimensions
 } from 'react-native';
 
+//components
+import SessionView from '../SessionView/index';
+
+
 //constants
 import color from '../../style/Colors';
 import {appVars} from '../../constants';
@@ -27,14 +31,14 @@ class WeekView extends Component {
 
  componentDidMount() {}
 
- _renderDay(){
-
+ _renderSessions(){
+  this.props.theme.sessions
  }
 
 
  render() {
   return (
-   <View style={[styles.weekWrapper]}>
+   <View style={[styles.themeWrapper]}>
     <View style={[styles.titleWrapper]}>
      <Text style={[styles.headerBold]}>{this.props.theme.number}</Text>
      <Text style={[styles.header]}>{this.props.theme.title}</Text>
@@ -47,7 +51,7 @@ class WeekView extends Component {
 }
 
 const styles = StyleSheet.create({
- weekWrapper: {
+ themeWrapper: {
   marginTop: 90
  },
  header: {
