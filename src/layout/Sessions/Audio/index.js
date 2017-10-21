@@ -101,7 +101,16 @@ class AudioSession extends GenericBackComponent {
   _this._getCurrentTime();
  }
 
+ _pauseMusic() {
+  this.music.pause();
+  clearInterval(this.interval);
+  clearInterval(this.helperInterval);
+
+  this.setState({playing: false});
+ }
+
  _navigateToDone() {
+  this._pauseMusic();
   this.props.navigator.push({
    screen: 'Mindfull.Done', // unique ID registered with Navigation.registerScreen
    title: '',
@@ -110,14 +119,6 @@ class AudioSession extends GenericBackComponent {
     content: this.props.session.content[0]
    }
   });
- }
-
- _pauseMusic() {
-  this.music.pause();
-  clearInterval(this.interval);
-  clearInterval(this.helperInterval);
-
-  this.setState({playing: false});
  }
 
  _renderChild() {

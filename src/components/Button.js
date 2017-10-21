@@ -22,7 +22,7 @@ export default class Button extends Component {
                       (this.props.filled) ? styles.buttonFilled : styles.buttonNormal,
                       this.props.viewStyle
                      ]}
-                     onPress={this.props.onPress}>
+                     onPress={this.props.onPress.bind(this)}>
     <View>
      <TextUpperCase style={[
       (this.props.filled) ? styles.textFilled : styles.textWhite,
