@@ -103,6 +103,9 @@ class AudioSession extends GenericBackComponent {
 
  _pauseMusic() {
   this.music.pause();
+  clearInterval(this.interval);
+  clearInterval(this.helperInterval);
+
   this.setState({playing: false});
  }
 
@@ -115,14 +118,13 @@ class AudioSession extends GenericBackComponent {
       <ProgressIndicator progress={this.state.progress}></ProgressIndicator>
       <PlayerButton onPause={this._pauseMusic.bind(this)} onPlay={this._playMusic.bind(this)} playing={this.state.playing} style={styles.playerButton}></PlayerButton>
      </View>
-     <Text>{this.state.helpText}</Text>
+     <Text style={styles.helpText}>{this.state.helpText}</Text>
     </View>
    </View>
   );
  }
 }
 
-// <Button onPress={this._playMusic.bind(this)} title="hiohio"></Button>
 const styles = StyleSheet.create({
  transparantBackground: {
   flex: 1,
@@ -132,12 +134,23 @@ const styles = StyleSheet.create({
   position: 'absolute'
  },
  progressWrapper: {
+  marginTop: 80,
   flex: 1,
   justifyContent: 'center',
   alignItems: 'center'
  },
  titleWrapper: {
   marginTop: 25
+ },
+ helpText: {
+  textAlign: 'center',
+  height: 24,
+  marginTop: '30%',
+  fontFamily: 'OpenSans',
+  fontSize: 18,
+  fontWeight: '300',
+  textAlign: 'center',
+  color: '#ffffff'
  },
  header: {
   textAlign: 'center',
