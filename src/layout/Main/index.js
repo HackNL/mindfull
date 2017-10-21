@@ -30,19 +30,19 @@ class Main extends GeneralBaseView {
  constructor(props) {
   super(props);
 
- }
+  // this.getData('FirstTime').then((firstTime) => {
+  //
+  //  console.log('firstTime', firstTime);
+  //  if (!firstTime || firstTime === null || firstTime === undefined) {
+  //   this.props.navigator.showModal({
+  //    screen: `Mindfull.Onboarding`, // unique ID registered with Navigation.registerScreen
+  //    title: '',
+  //    animationType: 'slide-up',
+  //    navigatorStyle: NavigationStyle
+  //   });
+  //  }
+  // });
 
- componentWillMount() {
-  this.getData('DirstTime').then((firstTime) => {
-   console.log('firstTime', firstTime);
-   if (!firstTime || firstTime === Null || firstTime === undefined) {
-    this.props.navigator.pop({
-     screen: `Mindfull.Onboarding`, // unique ID registered with Navigation.registerScreen
-     title: '',
-     navigatorStyle: NavigationStyle
-    });
-   }
-  });
  }
 
  getData(key) {

@@ -19,7 +19,7 @@ var generalText = {
             body: "No God No Happiness, Know God Know Happiness. ",
             task: [{
               title: 'Daily Advice',
-              body: 'sadfadsfsa',
+              body: 'Turn off your social media for one day, use the extra time to send someone you love a postcard. ',
             }],
             data: [{
                 url: 'https://www.biblegateway.com/passage/?search=Ecclesiastes+9&version=MSG',
@@ -43,7 +43,7 @@ var generalText = {
             body: "Don't use your energy to worry. Use your energy to create, to love, to hope and believe.",
             task: [{
               title: 'Daily Advice',
-              body: 'asdfadsfasdfsdfs',
+              body: 'Go trough your closet and give all clothes that you didn\'t wear for a year to a charity.',
             }],
             data: [{
                 url: 'http://www.songteksten.nl/songteksten/7901/byrds/turn--turn--turn-.htm',
@@ -54,7 +54,6 @@ var generalText = {
                 title: 'In Times like these John miles'
               }
             ]
-
           }
         }
       }, {
@@ -69,7 +68,7 @@ var generalText = {
             body: "Be Bold. Be Brave. Be Courageous.",
             task: [{
               title: 'Daily Advice',
-              body: '',
+              body: 'Give a compliment to three different persons.',
             }],
             data: [{
               url: 'https://jesus.net/jesus-net-websites-and-courses/why-jesus/',

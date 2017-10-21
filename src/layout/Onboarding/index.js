@@ -19,6 +19,11 @@ import {appVars, NavigationStyle} from '../../constants';
 import GeneralBaseView from '../../layout/GeneralBaseView';
 
 class Onboarding extends GeneralBaseView {
+ static navigatorStyle = {
+  drawUnderNavBar: true,
+  navBarTranslucent: true,
+  navBarTransparent: true
+ };
 
  constructor(props) {
   super(props);
@@ -27,15 +32,22 @@ class Onboarding extends GeneralBaseView {
   }
 
  }
+ componentDidMount() {
+  this._setData('FirstTime', true).this(() => {
+   console.log('done');
+  }).catch((err) => {
+   console.log(err);
+  });
+ }
 
- setData(key) {
+ _setData(key, data) {
   return new Promise(function(resolve, reject) {
    try {
     AsyncStorage.setData(key, (err, result) => {
      resolve(result);
     });
    } catch (error) {
-    reject();
+    reject(error);
     // Error saving data
    }
   });
@@ -44,10 +56,12 @@ class Onboarding extends GeneralBaseView {
  _renderChild() {
   return (
    <View style={[styles.transparantBackground]}>
-    <TextInput style={{
+    <Text style={styles.header}>Hi! Who are you?</Text>
+    <TextInput autoFocus={true} style={{
      height: 40,
-     borderColor: 'gray',
-     borderWidth: 1
+     borderBottomColor: color.white,
+     borderBottomWidth: 2,
+     backgroundColor: color.transparant
     }} onChangeText={(name) => this.setState({name})} value={this.state.name}/>
    </View>
   );
@@ -56,6 +70,13 @@ class Onboarding extends GeneralBaseView {
 }
 
 const styles = StyleSheet.create({
+ header: {
+  fontFamily: 'OpenSans',
+  marginTop: 140,
+  fontSize: 21,
+  fontWeight: '300',
+  color: '#ffffff'
+ },
  transparantBackground: {
   flex: 1,
   backgroundColor: color.transparant

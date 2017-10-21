@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -55,6 +54,14 @@
 		DAC3E91C1F9BA15E00C73345 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC3E9091F9BA14600C73345 /* libRCTVideo.a */; };
 		DAC3E9231F9BAA3800C73345 /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC3E9221F9BAA2700C73345 /* libRCTOrientation.a */; };
 		EEC52821A2DD4EF2889852D7 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19B0EED8AD5B4957B3651981 /* OpenSans-LightItalic.ttf */; };
+		156E0D6A55F249E89C577A17 /* Courgette-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F19575301C034345B5800947 /* Courgette-Regular.ttf */; };
+		2552EBF8FF3A4B9A9D250A9B /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 519F600F688F408AB6E99606 /* IndieFlower.ttf */; };
+		C995CAB0D1EB4813B7A1EC7F /* LobsterTwo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5934C7E398A74BFEA29DA1A8 /* LobsterTwo-Bold.ttf */; };
+		1C4BC326BE084C34BA5B1160 /* LobsterTwo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CD5BC4E16A845E4ABF2AA4E /* LobsterTwo-BoldItalic.ttf */; };
+		4CFE7D67008B40EE85807D4A /* LobsterTwo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99A7D22C43204AADA36878D8 /* LobsterTwo-Italic.ttf */; };
+		7E26C9173FF84B66AEFBCB4F /* LobsterTwo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BC1B079D8C64E2D91C3A9F8 /* LobsterTwo-Regular.ttf */; };
+		8533FD2360DC4B808117993A /* PermanentMarker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9BE6D40ABD440C58112035C /* PermanentMarker-Regular.ttf */; };
+		26FAC106D96246C3BF831DB2 /* UbuntuCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC13BCDB0FA54BB598786E9D /* UbuntuCondensed-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -403,6 +410,14 @@
 		EFB253BE323141EE9978202F /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-RegularItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		F077A3FB8B4A450D9BFB83DC /* Oswald-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Oswald-Light.ttf"; path = "../resources/fonts/Oswald/Oswald-Light.ttf"; sourceTree = "<group>"; };
 		F8B882E9C07E46C5876E6CE9 /* SF-UI-Text-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-BoldItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		F19575301C034345B5800947 /* Courgette-Regular.ttf */ = {isa = PBXFileReference; name = "Courgette-Regular.ttf"; path = "../resources/fonts/Courgette/Courgette-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		519F600F688F408AB6E99606 /* IndieFlower.ttf */ = {isa = PBXFileReference; name = "IndieFlower.ttf"; path = "../resources/fonts/IndieFlower/IndieFlower.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5934C7E398A74BFEA29DA1A8 /* LobsterTwo-Bold.ttf */ = {isa = PBXFileReference; name = "LobsterTwo-Bold.ttf"; path = "../resources/fonts/LobsterTwo/LobsterTwo-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2CD5BC4E16A845E4ABF2AA4E /* LobsterTwo-BoldItalic.ttf */ = {isa = PBXFileReference; name = "LobsterTwo-BoldItalic.ttf"; path = "../resources/fonts/LobsterTwo/LobsterTwo-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		99A7D22C43204AADA36878D8 /* LobsterTwo-Italic.ttf */ = {isa = PBXFileReference; name = "LobsterTwo-Italic.ttf"; path = "../resources/fonts/LobsterTwo/LobsterTwo-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0BC1B079D8C64E2D91C3A9F8 /* LobsterTwo-Regular.ttf */ = {isa = PBXFileReference; name = "LobsterTwo-Regular.ttf"; path = "../resources/fonts/LobsterTwo/LobsterTwo-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F9BE6D40ABD440C58112035C /* PermanentMarker-Regular.ttf */ = {isa = PBXFileReference; name = "PermanentMarker-Regular.ttf"; path = "../resources/fonts/PermanentMarker/PermanentMarker-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EC13BCDB0FA54BB598786E9D /* UbuntuCondensed-Regular.ttf */ = {isa = PBXFileReference; name = "UbuntuCondensed-Regular.ttf"; path = "../resources/fonts/UbuntuCondensed/UbuntuCondensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -666,6 +681,14 @@
 				E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */,
 				5CD7C173F0F24727B0DF8CF7 /* OpenSans-Semibold.ttf */,
 				C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */,
+				F19575301C034345B5800947 /* Courgette-Regular.ttf */,
+				519F600F688F408AB6E99606 /* IndieFlower.ttf */,
+				5934C7E398A74BFEA29DA1A8 /* LobsterTwo-Bold.ttf */,
+				2CD5BC4E16A845E4ABF2AA4E /* LobsterTwo-BoldItalic.ttf */,
+				99A7D22C43204AADA36878D8 /* LobsterTwo-Italic.ttf */,
+				0BC1B079D8C64E2D91C3A9F8 /* LobsterTwo-Regular.ttf */,
+				F9BE6D40ABD440C58112035C /* PermanentMarker-Regular.ttf */,
+				EC13BCDB0FA54BB598786E9D /* UbuntuCondensed-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1251,6 +1274,14 @@
 				8B0B5B1F0E504309BE2536A9 /* OpenSans-Semibold.ttf in Resources */,
 				5E315EFB3E6F48668344A3DB /* OpenSans-SemiboldItalic.ttf in Resources */,
 				39B5ADA61F9BE9E900033ED5 /* text1.mp3 in Resources */,
+				156E0D6A55F249E89C577A17 /* Courgette-Regular.ttf in Resources */,
+				2552EBF8FF3A4B9A9D250A9B /* IndieFlower.ttf in Resources */,
+				C995CAB0D1EB4813B7A1EC7F /* LobsterTwo-Bold.ttf in Resources */,
+				1C4BC326BE084C34BA5B1160 /* LobsterTwo-BoldItalic.ttf in Resources */,
+				4CFE7D67008B40EE85807D4A /* LobsterTwo-Italic.ttf in Resources */,
+				7E26C9173FF84B66AEFBCB4F /* LobsterTwo-Regular.ttf in Resources */,
+				8533FD2360DC4B808117993A /* PermanentMarker-Regular.ttf in Resources */,
+				26FAC106D96246C3BF831DB2 /* UbuntuCondensed-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
