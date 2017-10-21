@@ -39,7 +39,7 @@ class AudioSession extends GenericBackComponent {
 
   this.state = {
    playing: true,
-   progress: 0.1,
+   progress: 0,
    duration: 0,
    helpText: this.helpText[0]
   };
