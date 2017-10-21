@@ -5,15 +5,15 @@ import {
  Alert,
  Button,
  View,
- TouchableWithoutFeedback,
  ScrollView,
  Text,
+ AsyncStorage,
  Dimensions
 } from 'react-native';
 
 //constants
 import color from '../../style/Colors';
-import {appVars} from '../../constants';
+import {appVars, NavigationStyle} from '../../constants';
 
 //components
 import GradientBackground from '../../components/GradientBackground';
@@ -29,6 +29,31 @@ class Main extends GeneralBaseView {
 
  constructor(props) {
   super(props);
+
+  this.getData('FirstTime').then((firstTime) => {
+   if (!firstTime || firstTime === null || firstTime === undefined) {
+    this.props.navigator.showModal({
+     screen: `Mindfull.Onboarding`, // unique ID registered with Navigation.registerScreen
+     title: '',
+     animationType: 'slide-up',
+     navigatorStyle: NavigationStyle
+    });
+   }
+  });
+
+ }
+
+ getData(key) {
+  return new Promise(function(resolve, reject) {
+   try {
+    AsyncStorage.getItem(key, (err, result) => {
+     resolve(result);
+    });
+   } catch (error) {
+    reject();
+    // Error saving data
+   }
+  });
  }
 
  componentDidMount() {}
@@ -48,7 +73,7 @@ class Main extends GeneralBaseView {
 
  _renderChild() {
   return (
-   <View style={[styles.transparantBackground]} >
+   <View style={[styles.transparantBackground]}>
     {this._renderThemes()}
    </View>
   );

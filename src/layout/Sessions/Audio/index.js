@@ -35,7 +35,7 @@ class AudioSession extends GenericBackComponent {
   this.music;
   this.interval = setInterval(() => {}, 1000);
   this.helperInterval = setInterval(() => {}, 1000);
-  this.helpText = this.props.session.content[0].helpText;
+  this.helpText = this.props.session.content.helpText;
 
   this.state = {
    playing: false,
@@ -45,8 +45,8 @@ class AudioSession extends GenericBackComponent {
   };
  }
 
- componentDidMount() {
-  this.music = new Sound(this.props.session.content[0].soundUrl, Sound.MAIN_BUNDLE, (error) => {
+ componentWillMount() {
+  this.music = new Sound(this.props.session.content.soundUrl, Sound.MAIN_BUNDLE, (error) => {
    if (error) {
     console.log('failed to load the sound', error);
     return;
@@ -55,6 +55,10 @@ class AudioSession extends GenericBackComponent {
    // console.log('duration in seconds: ' + test.getDuration() + ' number of channels: ' + test.getNumberOfChannels());
   });
   this._setHelpText();
+ }
+
+ componentWillUnmount(){
+  this._pauseMusic();
  }
  _randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -65,7 +69,7 @@ class AudioSession extends GenericBackComponent {
   this.helperInterval = setInterval(() => {
 
    this.setState({
-    helpText: this.helpText[this._randomNumber(0, this.props.session.content[0].helpText.length)]
+    helpText: this.helpText[this._randomNumber(0, this.props.session.content.helpText.length)]
    });
   }, 10000);
  }
@@ -85,7 +89,6 @@ class AudioSession extends GenericBackComponent {
  }
 
  _playMusic() {
-  var _this = this;
   this.music.play((success) => {
    if (success) {
     console.log('successfully finished playing');
@@ -94,11 +97,11 @@ class AudioSession extends GenericBackComponent {
     console.log('playback failed due to audio decoding errors');
     // reset the player to its uninitialized state (android only)
     // this is the only option to recover after an error occured and use the player again
-    _this.music.reset();
+    this.music.reset();
    }
   });
-  _this.setState({playing: true});
-  _this._getCurrentTime();
+  this.setState({playing: true});
+  this._getCurrentTime();
  }
 
  _pauseMusic() {
@@ -116,7 +119,7 @@ class AudioSession extends GenericBackComponent {
    title: '',
    navigatorStyle: NavigationStyle,
    passProps: {
-    content: this.props.session.content[0]
+    content: this.props.session.content
    }
   });
  }
@@ -125,7 +128,9 @@ class AudioSession extends GenericBackComponent {
   return (
    <View style={[styles.transparantBackground]}>
     <View style={[styles.titleWrapper, styles.transparantBackground]}>
+
      <Text style={[styles.header]}>{this.props.title}</Text>
+
      <View style={[styles.progressWrapper]}>
       <ProgressIndicator progress={this.state.progress}></ProgressIndicator>
       <PlayerButton onPause={this._pauseMusic.bind(this)} onPlay={this._playMusic.bind(this)} playing={this.state.playing} style={styles.playerButton}></PlayerButton>
