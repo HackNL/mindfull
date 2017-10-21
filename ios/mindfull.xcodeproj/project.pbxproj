@@ -26,7 +26,6 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		14D879C4EC1B4BA9898400A9 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3B996B9A5641BAB14AD0E5 /* OpenSans-Bold.ttf */; };
 		175CCC101F0D1B0200DFCEE3 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D95E4CF1F0BDF09003D6516 /* libReactNativeNavigation.a */; };
-		17D426441F59B61300E4243E /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D4263B1F59B2D800E4243E /* libRealmReact.a */; };
 		17D426461F59C87700E4243E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D426451F59C87700E4243E /* libz.tbd */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -41,9 +40,10 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* mindfullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mindfullTests.m */; };
 		3917A4F51F6AC323001F1283 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A4D11F6AC30C001F1283 /* libBVLinearGradient.a */; };
-		39B5AC391F9B922200033ED5 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39B5AC381F9B922200033ED5 /* test.mp3 */; };
 		39B5AC981F9B9F4800033ED5 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5AC951F9B9F0E00033ED5 /* libART.a */; };
 		39B5ACD11F9BC4E000033ED5 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5ABFA1F9B8A5700033ED5 /* libRNSound.a */; };
+		39B5ADA51F9BE9E900033ED5 /* sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39B5ADA31F9BE9E900033ED5 /* sound1.mp3 */; };
+		39B5ADA61F9BE9E900033ED5 /* text1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39B5ADA41F9BE9E900033ED5 /* text1.mp3 */; };
 		50702EF7C081458CAAAC252D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */; };
 		58F169592ACB4AA9848CEBEA /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1302FAA058654374A3AEAFDA /* OpenSans-Italic.ttf */; };
 		5E315EFB3E6F48668344A3DB /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */; };
@@ -120,13 +120,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
-		};
-		17D4263A1F59B2D800E4243E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17D426181F59B2D800E4243E /* RealmReact.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F60690131CA2766F0003FB26;
-			remoteInfo = RealmReact;
 		};
 		17E07E2D1F598BE300076072 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -370,7 +363,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mindfull/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mindfull/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		17D426181F59B2D800E4243E /* RealmReact.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RealmReact.xcodeproj; path = "../node_modules/realm/react-native/ios/RealmReact.xcodeproj"; sourceTree = "<group>"; };
 		17D426401F59B2EB00E4243E /* libRealmJS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRealmJS.a; path = "../node_modules/realm/src/build/Debug-iphoneos/libRealmJS.a"; sourceTree = "<group>"; };
 		17D426421F59B41900E4243E /* libRealmJS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRealmJS.a; path = "../../../../Library/Developer/Xcode/DerivedData/mindfull-eqhanvsyezdabydgdcqlzggalodp/Build/Products/Debug-iphonesimulator/libRealmJS.a"; sourceTree = "<group>"; };
 		17D426451F59C87700E4243E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -381,8 +373,10 @@
 		2D02E4901E0B4A5D006451C7 /* mindfull-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mindfull-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3917A4CB1F6AC30C001F1283 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
 		39B5ABF51F9B8A5700033ED5 /* RNSound.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
-		39B5AC381F9B922200033ED5 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = test.mp3; path = ../resources/resources/sounds/test.mp3; sourceTree = "<group>"; };
 		39B5AC8F1F9B9F0E00033ED5 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		39B5AD411F9BD6AC00033ED5 /* libRealmJS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRealmJS.a; path = "../../../Library/Developer/Xcode/DerivedData/mindfull-cmsdsioqijunrlcojxsmonwmgblm/Build/Products/Debug-iphonesimulator/libRealmJS.a"; sourceTree = "<group>"; };
+		39B5ADA31F9BE9E900033ED5 /* sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sound1.mp3; path = ../resources/sounds/sound1.mp3; sourceTree = "<group>"; };
+		39B5ADA41F9BE9E900033ED5 /* text1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = text1.mp3; path = ../resources/sounds/text1.mp3; sourceTree = "<group>"; };
 		3C8D93C855234B209C0DA776 /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Medium.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
 		3F5D975305D84389855D68FB /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-SemiboldItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		407B102DF8E04998ADB08F5F /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -430,7 +424,6 @@
 				3917A4F51F6AC323001F1283 /* libBVLinearGradient.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				175CCC101F0D1B0200DFCEE3 /* libReactNativeNavigation.a in Frameworks */,
-				17D426441F59B61300E4243E /* libRealmReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -590,17 +583,10 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		17D426191F59B2D800E4243E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				17D4263B1F59B2D800E4243E /* libRealmReact.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		17D4263F1F59B2EB00E4243E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				39B5AD411F9BD6AC00033ED5 /* libRealmJS.a */,
 				17D426451F59C87700E4243E /* libz.tbd */,
 				17D426421F59B41900E4243E /* libRealmJS.a */,
 				17D426401F59B2EB00E4243E /* libRealmJS.a */,
@@ -628,7 +614,8 @@
 		39B5AC371F9B91C000033ED5 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				39B5AC381F9B922200033ED5 /* test.mp3 */,
+				39B5ADA31F9BE9E900033ED5 /* sound1.mp3 */,
+				39B5ADA41F9BE9E900033ED5 /* text1.mp3 */,
 			);
 			name = sounds;
 			sourceTree = "<group>";
@@ -708,7 +695,6 @@
 				39B5AC8F1F9B9F0E00033ED5 /* ART.xcodeproj */,
 				39B5ABF51F9B8A5700033ED5 /* RNSound.xcodeproj */,
 				3917A4CB1F6AC30C001F1283 /* BVLinearGradient.xcodeproj */,
-				17D426181F59B2D800E4243E /* RealmReact.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -956,10 +942,6 @@
 					ProjectRef = CD10D66F247F4A32A636E96B /* ReactNativeNavigation.xcodeproj */;
 				},
 				{
-					ProductGroup = 17D426191F59B2D800E4243E /* Products */;
-					ProjectRef = 17D426181F59B2D800E4243E /* RealmReact.xcodeproj */;
-				},
-				{
 					ProductGroup = 39B5ABF61F9B8A5700033ED5 /* Products */;
 					ProjectRef = 39B5ABF51F9B8A5700033ED5 /* RNSound.xcodeproj */;
 				},
@@ -1029,13 +1011,6 @@
 			fileType = archive.ar;
 			path = libReact.a;
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		17D4263B1F59B2D800E4243E /* libRealmReact.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRealmReact.a;
-			remoteRef = 17D4263A1F59B2D800E4243E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		17E07E2E1F598BE300076072 /* libthird-party.a */ = {
@@ -1262,12 +1237,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39B5AC391F9B922200033ED5 /* test.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				14D879C4EC1B4BA9898400A9 /* OpenSans-Bold.ttf in Resources */,
 				5F01D7F96D1A4E7492BC1D67 /* OpenSans-BoldItalic.ttf in Resources */,
 				0D425D00C69B4E84938D7C92 /* OpenSans-ExtraBold.ttf in Resources */,
+				39B5ADA51F9BE9E900033ED5 /* sound1.mp3 in Resources */,
 				10B78C44D861482EA90FCF3D /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				58F169592ACB4AA9848CEBEA /* OpenSans-Italic.ttf in Resources */,
 				B57160479B044066BF138795 /* OpenSans-Light.ttf in Resources */,
@@ -1275,6 +1250,7 @@
 				50702EF7C081458CAAAC252D /* OpenSans-Regular.ttf in Resources */,
 				8B0B5B1F0E504309BE2536A9 /* OpenSans-Semibold.ttf in Resources */,
 				5E315EFB3E6F48668344A3DB /* OpenSans-SemiboldItalic.ttf in Resources */,
+				39B5ADA61F9BE9E900033ED5 /* text1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

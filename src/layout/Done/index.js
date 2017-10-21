@@ -4,7 +4,6 @@ import {
  StyleSheet,
  Alert,
  View,
- TouchableWithoutFeedback,
  ScrollView,
  Linking,
  Text,
@@ -35,30 +34,47 @@ class Done extends GenericBackComponent {
 
  componentDidMount() {}
 
- _renderButtons() {
+ _renderExternalButtons() {
   return this.props.content.resources.data.map((resource, index) => {
    return (
-    <Button title={resource.title} filled={false} onPress={this._openURL.bind(this, resource.url)}></Button>
+    <Button title={resource.title} filled={false} index={index} onPress={this._openURL.bind(this, resource.url)}></Button>
    );
   });
  }
 
- _openURL(url){
+ _renderTipButton() {
+  return this.props.content.resources.task.map((resource, index) => {
+   return (
+    <Button title={resource.title} filled={false} index={index} onPress={this._openPopup.bind(this, resource)}></Button>
+   );
+  });
+ }
+
+ _openPopup(resource) {
+  Alert.alert(resource.title, resource.body, [
+   {
+    text: 'Thanks!',
+    onPress: () => console.log('OK Pressed')
+   }
+  ], {cancelable: false})
+ }
+
+ _openURL(url) {
   Linking.openURL(url).catch(err => console.error('An error occurred', err));
  }
 
- _renderBottom(){
+ _renderBottom() {
   return (
    <View style={styles.buttonWrapper}>
-    {this._renderButtons()}
+    {this._renderTipButton()}
+    {this._renderExternalButtons()}
     <Button title={'Finish Session'} filled={true} onPress={() => this._goToHome()}></Button>
    </View>
   )
  }
- _goToHome(){
-  this.props.navigator.popToRoot({
-    animated: false
-  })
+
+ _goToHome() {
+  this.props.navigator.popToRoot({animated: false})
  }
 
  _renderChild() {
@@ -68,7 +84,6 @@ class Done extends GenericBackComponent {
      <Text style={[styles.header]}>{this.props.content.resources.title}</Text>
      <Text style={[styles.body]}>{this.props.content.resources.body}</Text>
     </View>
-
 
    </View>
   );

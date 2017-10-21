@@ -5,7 +5,6 @@ import {
  Alert,
  Button,
  View,
- TouchableWithoutFeedback,
  ScrollView,
  Text,
  Dimensions
@@ -62,12 +61,6 @@ class VideoSession extends GenericBackComponent {
  componentWillUnmount() {
     Orientation.removeOrientationListener(this._orientationDidChange);
  }
-
-
-
-
-
-
 
     _renderChild() {
   return (

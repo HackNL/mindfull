@@ -22,8 +22,7 @@
   "react-native-sound": "^0.10.4",
   "react-native-svg": "^5.4.2",
   "react-native-video": "^2.0.0",
-  "react-timer-mixin": "^0.13.3",
-  "realm": "1.10.0"
+  "react-timer-mixin": "^0.13.3"
  },
  "devDependencies": {
   "babel-preset-react-native": "1.9.2",

@@ -5,7 +5,6 @@ import {
  Alert,
  Button,
  View,
- TouchableWithoutFeedback,
  ScrollView,
  Text,
  Dimensions

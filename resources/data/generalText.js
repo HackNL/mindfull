@@ -10,75 +10,98 @@ var generalText = {
     number: '#1',
     title: 'A dive into time',
     sessions: [{
-      title: 'The time',
-      kind: 'video',
-      content: [{
-        // videoUrl: require(''),
-        resources: [{
-            url: 'https://youtube.com/',
-            title: 'youtube'
-          },
-          {
-            url: 'https://youtube.com/',
-            title: 'youtube2'
+        title: 'The time',
+        kind: 'video',
+        content: {
+          videoUrl: '',
+          resources: {
+            title: "You did it!",
+            body: "No God No Happiness, Know God Know Happiness. ",
+            task: [{
+              title: 'Daily Advice',
+              body: 'sadfadsfsa',
+            }],
+            data: [{
+                url: 'https://www.biblegateway.com/passage/?search=Ecclesiastes+9&version=MSG',
+                title: 'Source of Tale'
+              },
+              {
+                url: 'https://www.azlyrics.com/lyrics/cyndilauper/timeaftertime.html',
+                title: 'Cyndi Lauper  Time after time'
+              }
+            ]
           }
-        ]
-      }]
-    }, {
-      title: 'Into time',
-      kind: 'audio',
-      content: [{
-        soundUrl: 'test.mp3',
-        helpText: ['Take a deep breath', 'Sit down and releax', 'Text'],
-        resources: {
-          title: 'You did it!',
-          body: '“What can you skip today to enjoy more time?”',
-          data: [{
-              url: 'https://bijbel.eo.nl/prediker',
-              title: 'Read prediker online'
-            },
-            {
-              url: 'https://youtube.com',
-              title: 'Follow up music'
-            },
-            {
-              url: 'https://youtube.com',
-              title: 'Read full text'
-            }
-          ]
         }
-      }]
-    }, {
-      title: 'Stil',
-      kind: 'stil',
-      content: [{
-        // soundUrl: require(''),
-        resources: [{
-            url: 'https://youtube.com/',
-            title: 'youtube'
-          },
-          {
-            url: 'https://youtube.com/',
-            title: 'youtube2'
+      }, {
+        title: 'Into time',
+        kind: 'audio',
+        content: {
+          soundUrl: 'sound1.mp3',
+          helpText: ['hoi', 'hiohio', 'hihio'],
+          resources: {
+            title: "You did it",
+            body: "Don't use your energy to worry. Use your energy to create, to love, to hope and believe.",
+            task: [{
+              title: 'Daily Advice',
+              body: 'asdfadsfasdfsdfs',
+            }],
+            data: [{
+                url: 'http://www.songteksten.nl/songteksten/7901/byrds/turn--turn--turn-.htm',
+                title: 'Songtekst Turn, Turn, Turn'
+              },
+              {
+                url: 'https://www.christart.com/poetry/poem4523.htm',
+                title: 'In Times like these John miles'
+              }
+            ]
+
           }
-        ]
-      }]
-    }, {
-      title: '',
-      kind: 'extra',
-      content: [{
-        // soundUrl: require(''),
-        resources: [{
-            url: 'https://youtube.com/',
-            title: 'youtube'
-          },
-          {
-            url: 'https://youtube.com/',
-            title: 'youtube2'
+        }
+      }, {
+        title: 'Stil',
+        kind: 'stil',
+        content: {
+          text: '',
+          soundUrl: 'text1.mp3',
+          // soundUrl: require(''),
+          resources: {
+            title: "You did it!",
+            body: "Be Bold. Be Brave. Be Courageous.",
+            task: [{
+              title: 'Daily Advice',
+              body: '',
+            }],
+            data: [{
+              url: 'https://jesus.net/jesus-net-websites-and-courses/why-jesus/',
+              title: 'Why Jesus Course'
+            }]
           }
-        ]
-      }]
-    }]
+        }
+      },
+      {
+        title: '',
+        kind: 'extra',
+        content: {
+          text: '',
+          soundUrl: 'text1.mp3',
+          resources: {
+            title: "You did it!",
+            body: "Be Bold. Be Brave. Be Courageous.",
+            task: [{
+              title: 'Why Jesus Course',
+              body: '',
+            }],
+            data: [{
+              url: 'https://jesus.net/jesus-net-websites-and-courses/why-jesus/',
+              title: 'Why Jesus Course'
+            }, {
+              url: 'https://www.azlyrics.com/lyrics/karijobe/iamnotalone.html',
+              title: 'Kari Jobe: I\'m not alone '
+            }]
+          }
+        }
+      }
+    ]
   }]
 };
 export default generalText;
