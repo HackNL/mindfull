@@ -15,7 +15,7 @@ import Sound from 'react-native-sound';
 
 //constants
 import color from '../../../style/Colors';
-import {appVars} from '../../../constants';
+import {appVars, NavigationStyle} from '../../../constants';
 
 //components
 import GenericBackComponent from '../../GenericBackComponent';
@@ -38,7 +38,7 @@ class AudioSession extends GenericBackComponent {
   this.helpText = this.props.session.content[0].helpText;
 
   this.state = {
-   playing: true,
+   playing: false,
    progress: 0,
    duration: 0,
    helpText: this.helpText[0]
@@ -89,7 +89,7 @@ class AudioSession extends GenericBackComponent {
   this.music.play((success) => {
    if (success) {
     console.log('successfully finished playing');
-
+    this._navigateToDone();
    } else {
     console.log('playback failed due to audio decoding errors');
     // reset the player to its uninitialized state (android only)
@@ -99,6 +99,17 @@ class AudioSession extends GenericBackComponent {
   });
   _this.setState({playing: true});
   _this._getCurrentTime();
+ }
+
+ _navigateToDone() {
+  this.props.navigator.push({
+   screen: 'Mindfull.Done', // unique ID registered with Navigation.registerScreen
+   title: '',
+   navigatorStyle: NavigationStyle,
+   passProps: {
+    content: this.props.session.content[0]
+   }
+  });
  }
 
  _pauseMusic() {
@@ -118,7 +129,9 @@ class AudioSession extends GenericBackComponent {
       <ProgressIndicator progress={this.state.progress}></ProgressIndicator>
       <PlayerButton onPause={this._pauseMusic.bind(this)} onPlay={this._playMusic.bind(this)} playing={this.state.playing} style={styles.playerButton}></PlayerButton>
      </View>
-     <Text style={styles.helpText}>{this.state.helpText}</Text>
+     <TouchableWithoutFeedback onPress={this._navigateToDone.bind(this)}>
+      <Text style={styles.helpText}>{this.state.helpText}</Text>
+     </TouchableWithoutFeedback>
     </View>
    </View>
   );

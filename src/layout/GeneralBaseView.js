@@ -30,6 +30,7 @@ export default class GeneralBaseView extends Component {
  }
 
  _renderChild() {}
+ _renderBottom() {}
 
  render() {
   return (
@@ -38,6 +39,7 @@ export default class GeneralBaseView extends Component {
     <ScrollView styles={[appStyle.flexContainer]}>
      {this._renderChild()}
     </ScrollView>
+    {this._renderBottom()}
    </GradientBackground>
 
   );
