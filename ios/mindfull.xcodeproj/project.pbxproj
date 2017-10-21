@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -12,6 +13,8 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* mindfullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mindfullTests.m */; };
+		0D425D00C69B4E84938D7C92 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB80E56793F4F5A9A625B1E /* OpenSans-ExtraBold.ttf */; };
+		10B78C44D861482EA90FCF3D /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 407B102DF8E04998ADB08F5F /* OpenSans-ExtraBoldItalic.ttf */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -21,6 +24,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		14D879C4EC1B4BA9898400A9 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3B996B9A5641BAB14AD0E5 /* OpenSans-Bold.ttf */; };
 		175CCC101F0D1B0200DFCEE3 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D95E4CF1F0BDF09003D6516 /* libReactNativeNavigation.a */; };
 		17D426441F59B61300E4243E /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D4263B1F59B2D800E4243E /* libRealmReact.a */; };
 		17D426461F59C87700E4243E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D426451F59C87700E4243E /* libz.tbd */; };
@@ -37,19 +41,15 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* mindfullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mindfullTests.m */; };
 		3917A4F51F6AC323001F1283 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A4D11F6AC30C001F1283 /* libBVLinearGradient.a */; };
-		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
-		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		BDBF5ACD310046C5A625FBEA /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 713F7A9F6F4646B0BCA7CE53 /* libRNSVG.a */; };
-		14D879C4EC1B4BA9898400A9 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3B996B9A5641BAB14AD0E5 /* OpenSans-Bold.ttf */; };
-		5F01D7F96D1A4E7492BC1D67 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13A4E4572C6B41A5B2AC177C /* OpenSans-BoldItalic.ttf */; };
-		0D425D00C69B4E84938D7C92 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB80E56793F4F5A9A625B1E /* OpenSans-ExtraBold.ttf */; };
-		10B78C44D861482EA90FCF3D /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 407B102DF8E04998ADB08F5F /* OpenSans-ExtraBoldItalic.ttf */; };
+		50702EF7C081458CAAAC252D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */; };
 		58F169592ACB4AA9848CEBEA /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1302FAA058654374A3AEAFDA /* OpenSans-Italic.ttf */; };
+		5E315EFB3E6F48668344A3DB /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */; };
+		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		5F01D7F96D1A4E7492BC1D67 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13A4E4572C6B41A5B2AC177C /* OpenSans-BoldItalic.ttf */; };
+		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		8B0B5B1F0E504309BE2536A9 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CD7C173F0F24727B0DF8CF7 /* OpenSans-Semibold.ttf */; };
 		B57160479B044066BF138795 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21FBA9BFE46F4ABA89AE1FCA /* OpenSans-Light.ttf */; };
 		EEC52821A2DD4EF2889852D7 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19B0EED8AD5B4957B3651981 /* OpenSans-LightItalic.ttf */; };
-		50702EF7C081458CAAAC252D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */; };
-		8B0B5B1F0E504309BE2536A9 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CD7C173F0F24727B0DF8CF7 /* OpenSans-Semibold.ttf */; };
-		5E315EFB3E6F48668344A3DB /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,13 +116,6 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
-		17C148011F13D26F00D140B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 397E8058F1784F8BB24E4EE0 /* RNSVG.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
-			remoteInfo = RNSVG;
-		};
 		17D4263A1F59B2D800E4243E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17D426181F59B2D800E4243E /* RealmReact.xcodeproj */;
@@ -157,13 +150,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
 			remoteInfo = "double-conversion-tvOS";
-		};
-		17E07E381F598BE300076072 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 397E8058F1784F8BB24E4EE0 /* RNSVG.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 17E07E0F1F5982DB00076072;
-			remoteInfo = "RNSVG-tvOS";
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -324,8 +310,11 @@
 		00E356EE1AD99517003FC87E /* mindfullTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mindfullTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* mindfullTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mindfullTests.m; sourceTree = "<group>"; };
+		0AB80E56793F4F5A9A625B1E /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBold.ttf"; path = "../resources/fonts/OpenSans/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1302FAA058654374A3AEAFDA /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Italic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
+		13A4E4572C6B41A5B2AC177C /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-BoldItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* mindfull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindfull.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = mindfull/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = mindfull/AppDelegate.m; sourceTree = "<group>"; };
@@ -338,15 +327,18 @@
 		17D426401F59B2EB00E4243E /* libRealmJS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRealmJS.a; path = "../node_modules/realm/src/build/Debug-iphoneos/libRealmJS.a"; sourceTree = "<group>"; };
 		17D426421F59B41900E4243E /* libRealmJS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRealmJS.a; path = "../../../../Library/Developer/Xcode/DerivedData/mindfull-eqhanvsyezdabydgdcqlzggalodp/Build/Products/Debug-iphonesimulator/libRealmJS.a"; sourceTree = "<group>"; };
 		17D426451F59C87700E4243E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		19B0EED8AD5B4957B3651981 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-LightItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		20683A77947340B884D0EBD9 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Oswald-Bold.ttf"; path = "../resources/fonts/Oswald/Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		21FBA9BFE46F4ABA89AE1FCA /* OpenSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* mindfull-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mindfull-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* mindfull-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mindfull-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3917A4CB1F6AC30C001F1283 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
-		397E8058F1784F8BB24E4EE0 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
 		3C8D93C855234B209C0DA776 /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Medium.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
 		3F5D975305D84389855D68FB /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-SemiboldItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		407B102DF8E04998ADB08F5F /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		5AB963811FF647728D55690F /* SF-UI-Text-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-MediumItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-MediumItalic.otf"; sourceTree = "<group>"; };
 		5BC25F443DD14B9AA9CA10B8 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Regular.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
+		5CD7C173F0F24727B0DF8CF7 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Semibold.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		713F7A9F6F4646B0BCA7CE53 /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSVG.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -356,22 +348,15 @@
 		931E548DB5204351895172FE /* SF-UI-Text-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-LightItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-LightItalic.otf"; sourceTree = "<group>"; };
 		93FAE1F03F524927A3C307CD /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Light.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
 		B1B6904C05C44740BA30596F /* SF-UI-Text-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Heavy.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-Heavy.otf"; sourceTree = "<group>"; };
+		BC3B996B9A5641BAB14AD0E5 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiboldItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		CD10D66F247F4A32A636E96B /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
 		D3BAEBE1ADFB4B8AB3D0BAAF /* SF-UI-Text-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Bold.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-Bold.otf"; sourceTree = "<group>"; };
+		E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		E8B9FA835A5E409E88881281 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Oswald-Regular.ttf"; path = "../resources/fonts/Oswald/Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		EFB253BE323141EE9978202F /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-RegularItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		F077A3FB8B4A450D9BFB83DC /* Oswald-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Oswald-Light.ttf"; path = "../resources/fonts/Oswald/Oswald-Light.ttf"; sourceTree = "<group>"; };
 		F8B882E9C07E46C5876E6CE9 /* SF-UI-Text-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-BoldItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-BoldItalic.otf"; sourceTree = "<group>"; };
-		BC3B996B9A5641BAB14AD0E5 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; name = "OpenSans-Bold.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		13A4E4572C6B41A5B2AC177C /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; name = "OpenSans-BoldItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0AB80E56793F4F5A9A625B1E /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; name = "OpenSans-ExtraBold.ttf"; path = "../resources/fonts/OpenSans/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		407B102DF8E04998ADB08F5F /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1302FAA058654374A3AEAFDA /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; name = "OpenSans-Italic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		21FBA9BFE46F4ABA89AE1FCA /* OpenSans-Light.ttf */ = {isa = PBXFileReference; name = "OpenSans-Light.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		19B0EED8AD5B4957B3651981 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; name = "OpenSans-LightItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; name = "OpenSans-Regular.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5CD7C173F0F24727B0DF8CF7 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; name = "OpenSans-Semibold.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; name = "OpenSans-SemiboldItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,7 +387,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				17D426461F59C87700E4243E /* libz.tbd in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				BDBF5ACD310046C5A625FBEA /* libRNSVG.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,15 +533,6 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		17C147E11F13D26E00D140B1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				17C148021F13D26F00D140B1 /* libRNSVG.a */,
-				17E07E391F598BE300076072 /* libRNSVG-tvOS.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		17D426191F59B2D800E4243E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,7 +635,6 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				CD10D66F247F4A32A636E96B /* ReactNativeNavigation.xcodeproj */,
-				397E8058F1784F8BB24E4EE0 /* RNSVG.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -789,7 +763,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = HQYD49AG39;
+						DevelopmentTeam = T8TD8Y6VZ2;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -870,10 +844,6 @@
 					ProductGroup = 17D426191F59B2D800E4243E /* Products */;
 					ProjectRef = 17D426181F59B2D800E4243E /* RealmReact.xcodeproj */;
 				},
-				{
-					ProductGroup = 17C147E11F13D26E00D140B1 /* Products */;
-					ProjectRef = 397E8058F1784F8BB24E4EE0 /* RNSVG.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -942,13 +912,6 @@
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		17C148021F13D26F00D140B1 /* libRNSVG.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNSVG.a;
-			remoteRef = 17C148011F13D26F00D140B1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		17D4263B1F59B2D800E4243E /* libRealmReact.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -982,13 +945,6 @@
 			fileType = archive.ar;
 			path = "libdouble-conversion.a";
 			remoteRef = 17E07E331F598BE300076072 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		17E07E391F598BE300076072 /* libRNSVG-tvOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libRNSVG-tvOS.a";
-			remoteRef = 17E07E381F598BE300076072 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3917A4D11F6AC30C001F1283 /* libBVLinearGradient.a */ = {
@@ -1340,7 +1296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = HQYD49AG39;
+				DEVELOPMENT_TEAM = T8TD8Y6VZ2;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
@@ -1354,7 +1310,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nl.uncinc.mindfull;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.mindfull;
 				PRODUCT_NAME = mindfull;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1365,7 +1321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HQYD49AG39;
+				DEVELOPMENT_TEAM = T8TD8Y6VZ2;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**/**",
 					"$(inherited)",
@@ -1379,7 +1335,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nl.uncinc.mindfull;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.mindfull;
 				PRODUCT_NAME = mindfull;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
