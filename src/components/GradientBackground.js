@@ -6,6 +6,7 @@ import {AppRegistry, StyleSheet, Dimensions, View} from 'react-native';
 import TimerMixin from 'react-timer-mixin';
 import LinearGradient from 'react-native-linear-gradient';
 import Chroma from 'chroma-js';
+import StarsParticles from './StarsParticles';
 
 var screenWidth = Dimensions.get('window').width
 var screenHeight = Dimensions.get('window').height
@@ -63,6 +64,7 @@ export default class GradientView extends Component {
  render() {
   return (
    <LinearGradient colors={[this.state.colorTop, this.state.colorBottom]} style={[appStyle.flexContainer, this.props.style]}>
+       <StarsParticles />
     {this.props.children}
    </LinearGradient>
   )
