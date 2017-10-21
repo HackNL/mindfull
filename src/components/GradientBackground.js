@@ -30,14 +30,18 @@ export default class GradientView extends Component {
    colorTop: TOP_COLORS_SPECTRUM[0],
    colorBottom: BOTTOM_COLORS_SPECTRUM[0]
   }
+  this.interval = setInterval(()=>{},INTERVAL);
  }
 
  componentDidMount() {
   this.changeColor();
  }
+ componentWillUnmount(){
+  clearInterval(this.interval);
+ }
 
  changeColor() {
-  var interval = setInterval(() => {
+   this.interval = setInterval(() => {
    let {topIndex, bottomIndex} = this.state
 
    topIndex++;

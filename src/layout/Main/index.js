@@ -33,10 +33,10 @@ class Main extends GeneralBaseView {
 
  componentDidMount() {}
 
- _renderWeeks() {
-  var themes = generalText.themes.map(function(theme) {
+ _renderThemes() {
+  var themes = generalText.themes.map(function(theme, index) {
    return (
-    <ThemeView theme={theme}></ThemeView>
+    <ThemeView theme={theme} key={index}></ThemeView>
    )
   });
   return (
@@ -48,14 +48,8 @@ class Main extends GeneralBaseView {
 
  _renderChild() {
   return (
-   <View style={[
-    {
-     flex: 1
-    },
-    styles.transparantBackground
-   ]}>
-    {this._renderWeeks()}
-
+   <View style={[styles.transparantBackground]}>
+    {this._renderThemes()}
    </View>
   );
  }
@@ -64,6 +58,7 @@ class Main extends GeneralBaseView {
 
 const styles = StyleSheet.create({
  transparantBackground: {
+  flex: 1,
   backgroundColor: color.transparant
  }
 });
