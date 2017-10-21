@@ -5,7 +5,7 @@ import {
  Alert,
  Button,
  View,
- TouchableWithoutFeedback,
+ TouchableOpacity,
  ScrollView,
  Text,
  Image,
@@ -102,13 +102,13 @@ class SessionView extends Component {
  render() {
 
   return (
-   <TouchableWithoutFeedback style={[styles.dayWrapper]} onPress={this._navigateTo.bind(this)}>
+   <TouchableOpacity style={[styles.dayWrapper]} onPress={this._navigateTo.bind(this)}>
     <View style={[styles.dayWrapper]}>
      {this._renderCircle()}
 
      {this._renderLine()}
     </View>
-   </TouchableWithoutFeedback>
+   </TouchableOpacity>
   )
  }
 }
