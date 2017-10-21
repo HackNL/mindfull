@@ -78,19 +78,19 @@ class StilSession extends GenericBackComponent {
 
      </View>
      <View style={styles.textWrapper}>
-<Text style={styles.textBasis}>
-      <Text style={styles.friendship}>Perhaps you'll find warmth and affection and caring And somebody special who's there</Text>
+      <Text style={styles.textBasis}>
+       <Text style={styles.friendship}>Perhaps you'll find warmth and affection and caring And somebody special who's there</Text>
 
-      To help you stay cantered and listen with interest To stories and feelings you share.
+       To help you stay cantered and listen with interest To stories and feelings you share.
       </Text>
 
      </View>
 
      <View style={styles.textWrapper}>
-<Text style={styles.textBasis}>
-      <Text style={styles.friendship}>Perhaps you'll find comfort in knowing your friends Are supportive of all that you do,</Text>
+      <Text style={styles.textBasis}>
+       <Text style={styles.friendship}>Perhaps you'll find comfort in knowing your friends Are supportive of all that you do,</Text>
 
-      And believe that whatever decisions you make, They'll be the right choices for you.
+       And believe that whatever decisions you make, They'll be the right choices for you.
       </Text>
 
      </View>
@@ -113,6 +113,13 @@ class StilSession extends GenericBackComponent {
 }
 
 const styles = StyleSheet.create({
+ header: {
+  fontFamily: 'OpenSans',
+  fontSize: 25,
+  marginTop: 40,
+  textAlign: 'center',
+  color: '#ffffff'
+ },
  transparantBackground: {
   flex: 1,
   backgroundColor: color.transparant
