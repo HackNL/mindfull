@@ -41,9 +41,9 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* mindfullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mindfullTests.m */; };
 		3917A4F51F6AC323001F1283 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A4D11F6AC30C001F1283 /* libBVLinearGradient.a */; };
-		39B5ABFB1F9B8A7200033ED5 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5ABFA1F9B8A5700033ED5 /* libRNSound.a */; };
 		39B5AC391F9B922200033ED5 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39B5AC381F9B922200033ED5 /* test.mp3 */; };
 		39B5AC981F9B9F4800033ED5 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5AC951F9B9F0E00033ED5 /* libART.a */; };
+		39B5ACD11F9BC4E000033ED5 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5ABFA1F9B8A5700033ED5 /* libRNSound.a */; };
 		50702EF7C081458CAAAC252D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */; };
 		58F169592ACB4AA9848CEBEA /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1302FAA058654374A3AEAFDA /* OpenSans-Italic.ttf */; };
 		5E315EFB3E6F48668344A3DB /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */; };
@@ -52,6 +52,8 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8B0B5B1F0E504309BE2536A9 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CD7C173F0F24727B0DF8CF7 /* OpenSans-Semibold.ttf */; };
 		B57160479B044066BF138795 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21FBA9BFE46F4ABA89AE1FCA /* OpenSans-Light.ttf */; };
+		DAC3E91C1F9BA15E00C73345 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC3E9091F9BA14600C73345 /* libRCTVideo.a */; };
+		DAC3E9231F9BAA3800C73345 /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC3E9221F9BAA2700C73345 /* libRCTOrientation.a */; };
 		EEC52821A2DD4EF2889852D7 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19B0EED8AD5B4957B3651981 /* OpenSans-LightItalic.ttf */; };
 /* End PBXBuildFile section */
 
@@ -322,6 +324,27 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		DAC3E9081F9BA14600C73345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAC3E8F21F9BA14600C73345 /* RCTVideo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTVideo;
+		};
+		DAC3E90A1F9BA14600C73345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAC3E8F21F9BA14600C73345 /* RCTVideo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 641E28441F0EEC8500443AF6;
+			remoteInfo = "RCTVideo-tvOS";
+		};
+		DAC3E9211F9BAA2700C73345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAC3E91D1F9BAA2700C73345 /* RCTOrientation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTOrientation;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -379,6 +402,8 @@
 		C7FA8D776310476FAB0C2EBD /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiboldItalic.ttf"; path = "../resources/fonts/OpenSans/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		CD10D66F247F4A32A636E96B /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
 		D3BAEBE1ADFB4B8AB3D0BAAF /* SF-UI-Text-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Bold.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-Bold.otf"; sourceTree = "<group>"; };
+		DAC3E8F21F9BA14600C73345 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
+		DAC3E91D1F9BAA2700C73345 /* RCTOrientation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTOrientation.xcodeproj; path = "../node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj"; sourceTree = "<group>"; };
 		E7D5EFD56C524F9286EE7547 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../resources/fonts/OpenSans/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		E8B9FA835A5E409E88881281 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Oswald-Regular.ttf"; path = "../resources/fonts/Oswald/Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		EFB253BE323141EE9978202F /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-RegularItalic.otf"; path = "../resources/fonts/SFUIText/SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
@@ -399,7 +424,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39B5ABFB1F9B8A7200033ED5 /* libRNSound.a in Frameworks */,
+				39B5ACD11F9BC4E000033ED5 /* libRNSound.a in Frameworks */,
+				DAC3E9231F9BAA3800C73345 /* libRCTOrientation.a in Frameworks */,
+				DAC3E91C1F9BA15E00C73345 /* libRCTVideo.a in Frameworks */,
 				3917A4F51F6AC323001F1283 /* libBVLinearGradient.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				175CCC101F0D1B0200DFCEE3 /* libReactNativeNavigation.a in Frameworks */,
@@ -676,6 +703,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				DAC3E91D1F9BAA2700C73345 /* RCTOrientation.xcodeproj */,
+				DAC3E8F21F9BA14600C73345 /* RCTVideo.xcodeproj */,
 				39B5AC8F1F9B9F0E00033ED5 /* ART.xcodeproj */,
 				39B5ABF51F9B8A5700033ED5 /* RNSound.xcodeproj */,
 				3917A4CB1F6AC30C001F1283 /* BVLinearGradient.xcodeproj */,
@@ -727,6 +756,23 @@
 				00E356EE1AD99517003FC87E /* mindfullTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* mindfull-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* mindfull-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC3E8F31F9BA14600C73345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC3E9091F9BA14600C73345 /* libRCTVideo.a */,
+				DAC3E90B1F9BA14600C73345 /* libRCTVideo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC3E91E1F9BAA2700C73345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC3E9221F9BAA2700C73345 /* libRCTOrientation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -878,6 +924,10 @@
 					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
 				},
 				{
+					ProductGroup = DAC3E91E1F9BAA2700C73345 /* Products */;
+					ProjectRef = DAC3E91D1F9BAA2700C73345 /* RCTOrientation.xcodeproj */;
+				},
+				{
 					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
 					ProjectRef = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
 				},
@@ -888,6 +938,10 @@
 				{
 					ProductGroup = 00C302E01ABCB9EE00DB3ED1 /* Products */;
 					ProjectRef = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
+				},
+				{
+					ProductGroup = DAC3E8F31F9BA14600C73345 /* Products */;
+					ProjectRef = DAC3E8F21F9BA14600C73345 /* RCTVideo.xcodeproj */;
 				},
 				{
 					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
@@ -1171,6 +1225,27 @@
 			fileType = archive.ar;
 			path = libRCTText.a;
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAC3E9091F9BA14600C73345 /* libRCTVideo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVideo.a;
+			remoteRef = DAC3E9081F9BA14600C73345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAC3E90B1F9BA14600C73345 /* libRCTVideo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVideo.a;
+			remoteRef = DAC3E90A1F9BA14600C73345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAC3E9221F9BAA2700C73345 /* libRCTOrientation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTOrientation.a;
+			remoteRef = DAC3E9211F9BAA2700C73345 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

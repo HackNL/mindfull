@@ -10,6 +10,7 @@
 // with npm ver 2. You'll need to "npm install" with npm 3 (see https://github.com/wix/react-native-navigation/issues/1)
 
 #import <React/RCTRootView.h>
+#import "../../node_modules/react-native-orientation/iOS/RCTOrientation/Orientation.h" // <--- import
 
 @implementation AppDelegate
 
@@ -47,5 +48,10 @@
   
   return YES;
 }
+
+
+  - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return [Orientation getOrientation];
+  }
 
 @end
