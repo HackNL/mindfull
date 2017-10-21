@@ -30,14 +30,16 @@ export default class GeneralBaseView extends Component {
  }
 
  _renderChild() {}
+ _renderBottom() {}
 
  render() {
   return (
    <GradientBackground style={styles.GradientBackground} colorTop={color.primary} colorBottom={color.secondary}>
-    <Image source={require('../../resources/images/bg_stars.png')} style={styles.stars}></Image>
+    <Image resizeMode={'center'} source={require('../../resources/images/bg_stars.png')} style={styles.stars}></Image>
     <ScrollView styles={[appStyle.flexContainer]}>
      {this._renderChild()}
     </ScrollView>
+    {this._renderBottom()}
    </GradientBackground>
 
   );
