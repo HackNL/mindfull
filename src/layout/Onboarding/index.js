@@ -3,7 +3,7 @@ import {
  AppRegistry,
  StyleSheet,
  Alert,
- Button,
+
  View,
  TextInput,
  Text,
@@ -18,6 +18,9 @@ import {appVars, NavigationStyle} from '../../constants';
 //Views
 import GeneralBaseView from '../../layout/GeneralBaseView';
 
+//components
+import Button from '../../components/Button.js';
+
 class Onboarding extends GeneralBaseView {
  static navigatorStyle = {
   drawUnderNavBar: true,
@@ -30,10 +33,10 @@ class Onboarding extends GeneralBaseView {
   this.state = {
    name: ''
   }
-
  }
- componentDidMount() {
-  this._setData('FirstTime', true).this(() => {
+
+ _setUserData() {
+  this._setData('FirstTime',true).this(() => {
    console.log('done');
   }).catch((err) => {
    console.log(err);
@@ -43,7 +46,7 @@ class Onboarding extends GeneralBaseView {
  _setData(key, data) {
   return new Promise(function(resolve, reject) {
    try {
-    AsyncStorage.setData(key, (err, result) => {
+    AsyncStorage.setItem(key, JSON.stringify(data), (err, result) => {
      resolve(result);
     });
    } catch (error) {
@@ -57,12 +60,8 @@ class Onboarding extends GeneralBaseView {
   return (
    <View style={[styles.transparantBackground]}>
     <Text style={styles.header}>Hi! Who are you?</Text>
-    <TextInput autoFocus={true} style={{
-     height: 40,
-     borderBottomColor: color.white,
-     borderBottomWidth: 2,
-     backgroundColor: color.transparant
-    }} onChangeText={(name) => this.setState({name})} value={this.state.name}/>
+    <TextInput autoFocus={true} style={styles.textField} onChangeText={(name) => this.setState({name})} value={this.state.name}/>
+    <Button onPress={this._setUserData.bind(this)} title={'Save'} viewStyle={styles.button} filled={true}></Button>
    </View>
   );
  }
@@ -70,7 +69,20 @@ class Onboarding extends GeneralBaseView {
 }
 
 const styles = StyleSheet.create({
+ textField: {
+  height: 40,
+  margin: 40,
+  borderBottomColor: color.white,
+  borderBottomWidth: 2,
+  color: color.white,
+  backgroundColor: color.transparant
+ },
+ button: {
+  marginLeft: 40,
+  marginRight: 40
+ },
  header: {
+  textAlign: 'center',
   fontFamily: 'OpenSans',
   marginTop: 140,
   fontSize: 21,
