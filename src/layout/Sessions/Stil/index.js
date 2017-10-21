@@ -30,13 +30,19 @@ class StilSession extends GenericBackComponent {
 
  componentDidMount() {}
 
-
  _renderChild() {
   return (
-   <View style={[styles.transparantBackground]}>
-    <Text>Stil</Text>
+   <View style={[styles.themeWrapper]}>
+    <View style={[styles.titleWrapper]}>
+     <Text style={[styles.headerBold]}>{this.props.theme.number}</Text>
+     <Text style={[styles.header]}>{this.props.theme.title}</Text>
+    </View>
+
+    <View style={[styles.sessionWrapper]}>
+     {this._renderSessions()}
+    </View>
    </View>
-  );
+  )
  }
 
 }

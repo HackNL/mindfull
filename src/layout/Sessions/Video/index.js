@@ -30,7 +30,6 @@ class VideoSession extends GenericBackComponent {
 
  componentDidMount() {}
 
-
  _renderChild() {
   return (
    <View style={[styles.transparantBackground]}>

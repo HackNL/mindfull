@@ -30,21 +30,31 @@ class AudioSession extends GenericBackComponent {
 
  componentDidMount() {}
 
-
  _renderChild() {
   return (
-   <View style={[styles.transparantBackground]}>
-    <Text>Audio</Text>
+   <View style={[styles.themeWrapper, styles.transparantBackground]}>
+    <View style={[styles.titleWrapper, styles.transparantBackground]}>
+     <Text style={[styles.header]}>{this.props.title}</Text>
+    </View>
    </View>
-  );
+  )
  }
-
 }
 
 const styles = StyleSheet.create({
  transparantBackground: {
   flex: 1,
   backgroundColor: color.transparant
+ },
+ titleWrapper: {
+  marginTop: 25
+ },
+ header: {
+  textAlign: 'center',
+  fontFamily: 'OpenSans',
+  fontSize: 21,
+  fontWeight: '200',
+  color: '#ffffff'
  }
 });
 
