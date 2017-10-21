@@ -77,7 +77,7 @@ class SessionView extends Component {
  _navigateTo() {
   console.log('`Mindfull.${this.props.session.kind}.session`', `Mindfull.${this.props.session.kind}.session`);
   this.props.navigator.push({
-   screen: `Mindfull.${this.props.session.kind}.session`, // unique ID registered with Navigation.registerScreen
+   screen: `Mindfull.session.${this.props.session.kind}`, // unique ID registered with Navigation.registerScreen
    title: '',
    navigatorStyle: NavigationStyle
   });

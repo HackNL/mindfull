@@ -25,7 +25,7 @@ import GeneralBaseView from '../../layout/GeneralBaseView';
 //Text
 import generalText from '../../../resources/data/generalText';
 
-class Main extends GeneralBaseView {
+class VideoSession extends GenericBackComponent {
 
  constructor(props) {
   super(props);
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
  }
 });
 
-export default Main;
+export default VideoSession;
