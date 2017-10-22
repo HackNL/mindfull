@@ -69,7 +69,7 @@ class ExtraSession extends GenericBackComponent {
      <Video
 
          style={{width: this.width, height: this.videoHeight}}
-         source = {require('../../../../resources/video/sessie1.mp4')}
+         source = {require('../../../../resources/video/extra.mp4')}
          ref={(ref) => { this.player = ref}}
          rate={1.0}
          volume={1}
