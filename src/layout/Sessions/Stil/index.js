@@ -44,11 +44,15 @@ class StilSession extends GenericBackComponent {
   });
 
  }
+
+ componentWillUnmount() {
+  this._pauseMusic();
+ }
+
  componentDidMount() {
   setTimeout(() => {
    this._playMusic();
-  });
-
+  },10);
  }
 
  _playMusic() {
