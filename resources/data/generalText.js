@@ -10,9 +10,11 @@ var generalText = {
     number: '#1',
     title: 'A dive into time',
     sessions: [{
+        id: '1',
         title: 'The time',
         kind: 'video',
         content: {
+            id: '1',
           videoUrl: '',
           resources: {
             title: "You did it!",
@@ -33,9 +35,11 @@ var generalText = {
           }
         }
       }, {
+        id: '2',
         title: 'Into time',
         kind: 'audio',
         content: {
+            id: '2',
           soundUrl: 'sound1.mp3',
           helpText: ['hoi', 'hiohio', 'hihio'],
           resources: {
@@ -57,9 +61,11 @@ var generalText = {
           }
         }
       }, {
+        id: '3',
         title: 'Stil',
         kind: 'stil',
         content: {
+            id: '3',
           text: '',
           soundUrl: 'text1.mp3',
           // soundUrl: require(''),
@@ -78,9 +84,11 @@ var generalText = {
         }
       },
       {
+          id: '4',
         title: '',
         kind: 'extra',
         content: {
+            id: '4',
           text: '',
           soundUrl: 'text1.mp3',
           resources: {

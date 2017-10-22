@@ -7,6 +7,7 @@ import {
  ScrollView,
  Linking,
  Text,
+    AsyncStorage,
  Dimensions
 } from 'react-native';
 
@@ -29,7 +30,7 @@ class Done extends GenericBackComponent {
 
  constructor(props) {
   super(props);
-
+     AsyncStorage.setItem('session:' + this.props.content.id , JSON.stringify({state: 'done'}));
  }
 
  componentDidMount() {}

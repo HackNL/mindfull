@@ -30,6 +30,7 @@ class Main extends GeneralBaseView {
  constructor(props) {
   super(props);
 
+
   this.getData('FirstTime').then((firstTime) => {
    if (!firstTime || firstTime === null || firstTime === undefined) {
     this.props.navigator.showModal({
