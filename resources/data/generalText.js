@@ -94,16 +94,12 @@ var generalText = {
           resources: {
             title: "You did it!",
             body: "Be Bold. Be Brave. Be Courageous.",
-            task: [{
-              title: 'Why Jesus Course',
-              body: '',
-            }],
             data: [{
               url: 'https://jesus.net/jesus-net-websites-and-courses/why-jesus/',
               title: 'Why Jesus Course'
             }, {
-              url: 'https://www.azlyrics.com/lyrics/karijobe/iamnotalone.html',
-              title: 'Kari Jobe: I\'m not alone '
+              url: 'https://www.youtube.com/watch?v=uJ4diEohODE',
+              title: 'To youtube'
             }]
           }
         }
