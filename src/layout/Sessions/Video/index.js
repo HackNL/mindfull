@@ -12,7 +12,7 @@ import {
 
 //constants
 import color from '../../../style/Colors';
-import {appVars} from '../../../constants';
+import {appVars, NavigationStyle} from '../../../constants';
 
 //components
 import GenericBackComponent from '../../GenericBackComponent';
@@ -116,6 +116,15 @@ class VideoSession extends GenericBackComponent {
 
     _onEnd(){
         this.setState({playing: false, ended:true});
+
+        this.props.navigator.push({
+            screen: 'Mindfull.Done', // unique ID registered with Navigation.registerScreen
+            title: '',
+            navigatorStyle: NavigationStyle,
+            passProps: {
+                content: this.props.session.content
+            }
+        });
     }
 
 

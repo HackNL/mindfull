@@ -62,7 +62,7 @@ class Main extends GeneralBaseView {
  _renderThemes() {
   var themes = generalText.themes.map((theme, index) => {
    return (
-    <ThemeView theme={theme} key={index} navigator={this.props.navigator}></ThemeView>
+    <ThemeView theme={theme} key={index} done={this.props.sessionDone} navigator={this.props.navigator}></ThemeView>
    )
   });
   return (

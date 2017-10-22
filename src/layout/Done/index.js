@@ -13,7 +13,7 @@ import {
 
 //constants
 import color from '../../style/Colors';
-import {appVars} from '../../constants';
+import {appVars, NavigationStyle} from '../../constants';
 
 //components
 import GradientBackground from '../../components/GradientBackground';
@@ -76,6 +76,17 @@ class Done extends GenericBackComponent {
 
  _goToHome() {
   this.props.navigator.popToRoot({animated: false})
+
+
+     this.props.navigator.push({
+         screen: 'Mindfull.Main', // unique ID registered with Navigation.registerScreen
+         title: '',
+         navigatorStyle: NavigationStyle,
+         passProps: {
+             sessionDone: this.props.content.id
+         }
+     });
+
  }
 
  _renderChild() {
