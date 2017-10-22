@@ -9,6 +9,8 @@ import {
  Text,
  Dimensions
 } from 'react-native';
+import Video from 'react-native-video';
+import Orientation from 'react-native-orientation';
 
 //constants
 import color from '../../../style/Colors';
@@ -17,8 +19,6 @@ import {appVars, NavigationStyle} from '../../../constants';
 //components
 import GenericBackComponent from '../../GenericBackComponent';
 import ThemeView from '../../../components/ThemeView';
-import Video from 'react-native-video';
-import Orientation from 'react-native-orientation';
 import ProgressIndicator from '../../../components/progressIndicator';
 import PlayerButton from '../../../components/PlayerButton'
 
