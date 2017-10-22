@@ -18,9 +18,18 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_stars" translatesAutoresizingMaskIntoConstraints="NO" id="mY2-Up-4pY">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="I9P-9E-Kgb">
+                    <rect key="frame" x="120" y="157" width="240" height="167"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="167" id="bBb-2A-q2g"/>
+                        <constraint firstAttribute="width" constant="240" id="oqH-9S-1qW"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.49019607843137253" green="0.64313725490196072" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="I9P-9E-Kgb" firstAttribute="centerX" secondItem="mY2-Up-4pY" secondAttribute="centerX" id="6vT-Fa-S9d"/>
+                <constraint firstItem="I9P-9E-Kgb" firstAttribute="centerY" secondItem="mY2-Up-4pY" secondAttribute="centerY" id="ATC-P6-w3Y"/>
                 <constraint firstAttribute="trailing" secondItem="mY2-Up-4pY" secondAttribute="trailing" id="aj1-xc-CKy"/>
                 <constraint firstAttribute="bottom" secondItem="mY2-Up-4pY" secondAttribute="bottom" id="l16-gZ-d2i"/>
                 <constraint firstItem="mY2-Up-4pY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="s0i-2e-eEQ"/>
@@ -33,5 +42,6 @@
     </objects>
     <resources>
         <image name="bg_stars" width="279" height="461"/>
+        <image name="icon" width="1024" height="1024"/>
     </resources>
 </document>

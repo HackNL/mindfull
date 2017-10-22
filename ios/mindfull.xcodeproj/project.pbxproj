@@ -1453,7 +1453,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.mindfulll;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.poem;
 				PRODUCT_NAME = mindfull;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1479,7 +1479,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.mindfulll;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.hack.poem;
 				PRODUCT_NAME = mindfull;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
