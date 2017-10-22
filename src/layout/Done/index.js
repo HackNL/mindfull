@@ -30,10 +30,11 @@ class Done extends GenericBackComponent {
 
  constructor(props) {
   super(props);
-     AsyncStorage.setItem('session:' + this.props.content.id , JSON.stringify({state: 'done'}));
  }
 
- componentDidMount() {}
+ componentDidMount() {
+     AsyncStorage.setItem('session:' + this.props.content.id , JSON.stringify({state: 'done'}));
+ }
 
  _renderExternalButtons() {
   return this.props.content.resources.data.map((resource, index) => {

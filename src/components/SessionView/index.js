@@ -80,9 +80,12 @@ class SessionView extends Component {
 
  _renderCircle() {
   var state = this.state.state;
-  if (this.props.session.kind === 'video') {
-      state = 'active';
-  }
+
+     if (this.props.session.kind === 'video' && this.state.state!=='done') {
+         state = 'active';
+     }
+
+
   return (
    <View style={[styles.titleWrapper]}>
     <View style={{

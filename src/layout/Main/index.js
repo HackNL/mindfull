@@ -51,7 +51,9 @@ class Main extends GeneralBaseView {
  }
 
     componentDidMount() {
+        console.log("getting first time");
         this.getData('FirstTime').then((firstTime) => {
+            console.log("getting data");
             if (!firstTime || firstTime === null || firstTime === undefined) {
                 this.props.navigator.showModal({
                     screen: `Mindfull.Onboarding`, // unique ID registered with Navigation.registerScreen

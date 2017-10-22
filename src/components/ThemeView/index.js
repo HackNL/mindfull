@@ -26,14 +26,27 @@ class WeekView extends Component {
  constructor(props) {
   super(props);
 
+
+     this.handler = this.handler.bind(this)
+
+     this.state = {
+      hasActive: false
+     }
+
  }
+
+    handler(key) {
+        this.setState({
+            hasActive: key
+        })
+    }
 
  componentDidMount() {}
 
  _renderSessions(){
   return this.props.theme.sessions.map((session, index) => {
    return (
-    <SessionView session={session} state={1} key={index} navigator={this.props.navigator}></SessionView>
+    <SessionView session={session} state={1} key={index} navigator={this.props.navigator} activeHandler={this.handler} hasActive={this.state.hasActive}></SessionView>
    );
   });
  }

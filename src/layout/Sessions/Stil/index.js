@@ -34,6 +34,7 @@ class StilSession extends GenericBackComponent {
  }
 
  componentWillMount() {
+  console.log(this.props.session.content.soundUrl);
   this.music = new Sound(this.props.session.content.soundUrl, Sound.MAIN_BUNDLE, (error) => {
    if (error) {
     console.log('failed to load the sound', error);
@@ -52,7 +53,7 @@ class StilSession extends GenericBackComponent {
  componentDidMount() {
   setTimeout(() => {
    this._playMusic();
-  },10);
+  },100);
  }
 
  _playMusic() {
