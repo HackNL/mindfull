@@ -168,7 +168,7 @@ class StilSession extends GenericBackComponent {
     </View>
     <View style={styles.buttonWrapper}>
 
-     <Button title="Finsch" filled={true} onPress={this._navigateToDone.bind(this)}></Button>
+     <Button title="Finish" filled={true} onPress={this._navigateToDone.bind(this)}></Button>
     </View>
    </View>
   )
