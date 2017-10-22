@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {
  AppRegistry,
+    AsyncStorage,
  StyleSheet,
  Alert,
  Button,
@@ -47,13 +48,43 @@ class SessionView extends Component {
  constructor(props) {
   super(props);
 
+  this.state = {
+   state: 'todo'
+  }
+
+  console.log(this.props.session.id);
+
+
+ }
+
+ componentDidUpdate(){
+     this._getState(this.props.session.id);
+ }
+
+    componentDidMount() {
+     this._getState(this.props.session.id);
+    }
+
+ _getState(key) {
+
+     try {
+         AsyncStorage.getItem('session:' + key, (err, result) => {
+          if(result) {
+           console.log('DONE!' + key);
+              this.setState({state: 'done'});
+          }
+         });
+     } catch (error) {
+         console.log(error);
+         // Error saving data
+     }
+     console.log(this.state.state);
  }
 
  _renderCircle() {
-  var state = 'todo';
-  //TODO; save progress in DB
+  var state = this.state.state;
   if (this.props.session.kind === 'video') {
-   state = 'active'
+      state = 'active';
   }
   return (
    <View style={[styles.titleWrapper]}>

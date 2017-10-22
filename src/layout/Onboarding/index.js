@@ -36,25 +36,10 @@ class Onboarding extends GeneralBaseView {
  }
 
  _setUserData() {
-  this._setData('FirstTime',true).this(() => {
-   console.log('done');
-  }).catch((err) => {
-   console.log(err);
-  });
+     AsyncStorage.setItem('FirstTime', JSON.stringify(true));
+     this.props.navigator.dismissModal();
  }
 
- _setData(key, data) {
-  return new Promise(function(resolve, reject) {
-   try {
-    AsyncStorage.setItem(key, JSON.stringify(data), (err, result) => {
-     resolve(result);
-    });
-   } catch (error) {
-    reject(error);
-    // Error saving data
-   }
-  });
- }
 
  _renderChild() {
   return (
