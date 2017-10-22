@@ -24,7 +24,7 @@ var generalText = {
               body: 'Turn off your social media for one day, use the extra time to send someone you love a postcard. ',
             }],
             data: [{
-                url: 'https://www.biblegateway.com/passage/?search=Ecclesiastes+9&version=MSG',
+                url: 'https://www.biblegateway.com/passage/?search=Ecclesiastes+3&version=MSG',
                 title: 'Source of Tale'
               },
               {
