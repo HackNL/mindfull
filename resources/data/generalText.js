@@ -41,7 +41,7 @@ var generalText = {
         content: {
             id: '2',
           soundUrl: 'sound1.mp3',
-          helpText: ['hoi', 'hiohio', 'hihio'],
+          helpText: ['Sit and releax', 'Take a deep breath', 'Go to a still place'],
           resources: {
             title: "You did it",
             body: "Don't use your energy to worry. Use your energy to create, to love, to hope and believe.",
@@ -62,7 +62,7 @@ var generalText = {
         }
       }, {
         id: '3',
-        title: 'Stil',
+        title: 'Read',
         kind: 'stil',
         content: {
             id: '3',
