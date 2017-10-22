@@ -67,18 +67,18 @@ class SessionView extends Component {
 
  _getState(key) {
 
-     try {
-         AsyncStorage.getItem('session:' + key, (err, result) => {
-          if(result) {
-           console.log('DONE!' + key);
-              this.setState({state: 'done'});
-          }
-         });
-     } catch (error) {
-         console.log(error);
-         // Error saving data
-     }
-     console.log(this.state.state);
+     // try {
+     //     AsyncStorage.getItem('session:' + key, (err, result) => {
+     //      if(result) {
+     //       console.log('DONE!' + key);
+     //          this.setState({state: 'done'});
+     //      }
+     //     });
+     // } catch (error) {
+     //     console.log(error);
+     //     // Error saving data
+     // }
+     // console.log(this.state.state);
  }
 
  _renderCircle() {
