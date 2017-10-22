@@ -3,20 +3,21 @@ import {
  AppRegistry,
  StyleSheet,
  Alert,
- Button,
  View,
  ScrollView,
  Text,
  Dimensions
 } from 'react-native';
+import Sound from 'react-native-sound';
 
 //constants
 import color from '../../../style/Colors';
-import {appVars} from '../../../constants';
+import {appVars, NavigationStyle} from '../../../constants';
 
 //components
 import GenericBackComponent from '../../GenericBackComponent';
 import ThemeView from '../../../components/ThemeView';
+import Button from '../../../components/Button.js';
 
 //Text
 import generalText from '../../../../resources/data/generalText';
@@ -25,9 +26,63 @@ class StilSession extends GenericBackComponent {
 
  constructor(props) {
   super(props);
+  this.music = null;
+
+  this.state = {
+   playing: false
+  }
  }
 
- componentDidMount() {}
+ componentWillMount() {
+  this.music = new Sound(this.props.session.content.soundUrl, Sound.MAIN_BUNDLE, (error) => {
+   if (error) {
+    console.log('failed to load the sound', error);
+    return;
+   }
+   this.setState({duration: this.music.getDuration()});
+   // console.log('duration in seconds: ' + test.getDuration() + ' number of channels: ' + test.getNumberOfChannels());
+  });
+
+ }
+ componentDidMount() {
+  setTimeout(() => {
+   this._playMusic();
+  });
+
+ }
+
+ _playMusic() {
+  this.music.play((success) => {
+   if (success) {
+    console.log('successfully finished playing');
+    this._navigateToDone();
+   } else {
+    console.log('playback failed due to audio decoding errors');
+    // reset the player to its uninitialized state (android only)
+    // this is the only option to recover after an error occured and use the player again
+    this.music.reset();
+   }
+  });
+  this.setState({playing: true});
+ }
+
+ _pauseMusic() {
+  this.music.pause();
+  this.setState({playing: false});
+ }
+
+ _navigateToDone() {
+
+  this._pauseMusic();
+  this.props.navigator.push({
+   screen: 'Mindfull.Done', // unique ID registered with Navigation.registerScreen
+   title: '',
+   navigatorStyle: NavigationStyle,
+   passProps: {
+    content: this.props.session.content
+   }
+  });
+ }
 
  _renderChild() {
   return (
@@ -106,6 +161,10 @@ class StilSession extends GenericBackComponent {
       <Text style={styles.big}>You're not going that way!</Text>
      </View>
     </View>
+    <View style={styles.buttonWrapper}>
+
+     <Button title="Finsch" filled={true} onPress={this._navigateToDone.bind(this)}></Button>
+    </View>
    </View>
   )
  }
@@ -113,6 +172,9 @@ class StilSession extends GenericBackComponent {
 }
 
 const styles = StyleSheet.create({
+ buttonWrapper: {
+  margin: 40
+ },
  header: {
   fontFamily: 'OpenSans',
   fontSize: 25,
