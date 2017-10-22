@@ -14,7 +14,7 @@ var generalText = {
         title: 'The time',
         kind: 'video',
         content: {
-            id: '1',
+          id: '1',
           videoUrl: '',
           resources: {
             title: "You did it!",
@@ -39,9 +39,9 @@ var generalText = {
         title: 'Into time',
         kind: 'audio',
         content: {
-            id: '2',
+          id: '2',
           soundUrl: 'sound1.mp3',
-          helpText: ['Sit and releax', 'Take a deep breath', 'Go to a still place'],
+          helpText: ['Sit and relax', 'Take a deep breath', 'Go to a still place'],
           resources: {
             title: "You did it",
             body: "Don't use your energy to worry. Use your energy to create, to love, to hope and believe.",
@@ -65,7 +65,7 @@ var generalText = {
         title: 'Read',
         kind: 'stil',
         content: {
-            id: '3',
+          id: '3',
           text: '',
           soundUrl: 'text1.mp3',
           // soundUrl: require(''),
@@ -84,11 +84,11 @@ var generalText = {
         }
       },
       {
-          id: '4',
+        id: '4',
         title: '',
         kind: 'extra',
         content: {
-            id: '4',
+          id: '4',
           text: '',
           soundUrl: 'text1.mp3',
           resources: {
