@@ -52,33 +52,30 @@ class SessionView extends Component {
    state: 'todo'
   }
 
-  console.log(this.props.session.id);
 
 
  }
 
- componentDidUpdate(){
-     this._getState(this.props.session.id);
- }
 
     componentDidMount() {
      this._getState(this.props.session.id);
     }
 
+
  _getState(key) {
 
-     // try {
-     //     AsyncStorage.getItem('session:' + key, (err, result) => {
-     //      if(result) {
-     //       console.log('DONE!' + key);
-     //          this.setState({state: 'done'});
-     //      }
-     //     });
-     // } catch (error) {
-     //     console.log(error);
-     //     // Error saving data
-     // }
-     // console.log(this.state.state);
+     try {
+         AsyncStorage.getItem('session:' + key, (err, result) => {
+          if(result) {
+           console.log('DONE!' + key);
+              this.setState({state: 'done'});
+          }
+         });
+     } catch (error) {
+         console.log(error);
+         // Error saving data
+     }
+     console.log(this.state.state);
  }
 
  _renderCircle() {

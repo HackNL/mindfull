@@ -31,18 +31,11 @@ class Main extends GeneralBaseView {
   super(props);
 
 
-  this.getData('FirstTime').then((firstTime) => {
-   if (!firstTime || firstTime === null || firstTime === undefined) {
-    this.props.navigator.showModal({
-     screen: `Mindfull.Onboarding`, // unique ID registered with Navigation.registerScreen
-     title: '',
-     animationType: 'slide-up',
-     navigatorStyle: NavigationStyle
-    });
-   }
-  });
+
 
  }
+
+
 
  getData(key) {
   return new Promise(function(resolve, reject) {
@@ -57,7 +50,19 @@ class Main extends GeneralBaseView {
   });
  }
 
- componentDidMount() {}
+    componentDidMount() {
+        this.getData('FirstTime').then((firstTime) => {
+            if (!firstTime || firstTime === null || firstTime === undefined) {
+                this.props.navigator.showModal({
+                    screen: `Mindfull.Onboarding`, // unique ID registered with Navigation.registerScreen
+                    title: '',
+                    animationType: 'slide-up',
+                    navigatorStyle: NavigationStyle
+                });
+            }
+        });
+
+    }
 
  _renderThemes() {
   var themes = generalText.themes.map((theme, index) => {
