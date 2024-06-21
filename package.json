@@ -12,7 +12,7 @@
  "dependencies": {
   "chroma-js": "^2.0.2",
   "react": "^16.8.1",
-  "react-native": "^0.58.4",
+  "react-native": "^0.74.2",
   "react-native-linear-gradient": "^2.5.3",
   "react-native-navigation": "^2.10.0",
   "react-native-orientation": "^3.1.0",
